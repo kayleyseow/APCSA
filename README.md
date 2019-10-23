@@ -1,2 +1,2 @@
 # compsci
-computer science excersices
+computer science problems
