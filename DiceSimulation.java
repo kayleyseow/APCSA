@@ -1,3 +1,12 @@
+/*
+Simulate the probability of rolling a given sum using two six-sided dice.
+User specifies two inputs: desiredSum and numberRolls. desiredsSum must be
+between 2 and 12, while numberRolls can be any positive integer.
+Your program should randomly roll the dice numberRolls times and keep
+track of the number of "successes," i.e. when the two dice sum to desiredSum.
+Output the probability = (number of successes) / numberRolls.
+Round your output to two decimal places.
+*/
 import java.util.*; 
 public class DiceSimulation{
 	public static void main(String[] args) {
