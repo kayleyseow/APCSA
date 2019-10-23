@@ -1,3 +1,5 @@
+//Harmonic Series with a timer to see how long it will take to caltulate the numbers
+//the limit number is around 22.05
 import java.util.*; 
 public class HarmonicSeriesTimed { 
     public static void main(String args[]) { 
