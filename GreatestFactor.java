@@ -1,3 +1,4 @@
+//Write a method that takes an integer n that is greater than 1 and returns the largest integer that is smaller than n and evenly divides n.
 import java.util.*; 
 public class GreatestFactor{
 	public static void main(String[] args) {
