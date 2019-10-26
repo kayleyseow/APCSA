@@ -1,5 +1,12 @@
-import java.util.*;
+/*Oh no! Amy Belle forgot how decimal placeholders work!
+Given an integer n and position k, please write a java program to compute the kth digit in n with 0-based indexing from right to left. You may assume n >= 0 and k >= 0. 
+Input:
+543561 4
 
+Output:
+4
+*/
+import java.util.*;
 public class KthDigit {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
