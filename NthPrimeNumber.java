@@ -9,21 +9,30 @@ public class NthPrimeNumber{
 		System.out.print("enter integer n for nth prime (1st prime = 2): ");
 		int nth= console.nextInt();
 		System.out.println("Prime #" + nth + " is " + primenumber(nth));
-
+   	}
+	public static boolean ispn(int x){
+		if (x <= 1) {
+			return false;
+		}
+		for (int i = 2;i*i <= x;i++ ) {
+			if (x%i ==0) {
+				return false;
+			}
+		}
+		return true;
 	}
 	public static int primenumber(int x){
-		int num=1, nthnumber=0, i;
-		while (nthnumber < x){
-	      num=num+1;
-	      for (i = 2; i <= num; i++){
-	        if (num % i == 0) {
-	          break;
-	        }
-	      }
-	      if ( i == num){
-	        nthnumber = nthnumber+1;
-	      }
-	    }
-	    return num;
+		int num=1;
+		int nthnumber=2;
+		if (x==1) {
+			return 2;
+		}
+		while (nthnumber <= x) {
+			num = num + 2;
+			if (ispn(num) == true) {
+				nthnumber++;
+			}
+		}
+		return num;
 	}
 }
