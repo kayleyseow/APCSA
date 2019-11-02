@@ -10,6 +10,8 @@ public class Fibonacci {
 		int numberOfTerms = console.nextInt();
 		System.out.println(number1);
 		System.out.println(number2);
+		for (int i=3; i <= numberOfTerms; i++){
+			
 		}
 	}
 }
