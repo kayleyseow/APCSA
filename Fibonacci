@@ -6,6 +6,10 @@ public class Fibonacci {
 		long number2 = 1;
 		long number3;
 		System.out.print("Enter number of terms: ");
+		Scanner console = new Scanner(System.in);
+		int numberOfTerms = console.nextInt();
+		System.out.println(number1);
+		System.out.println(number2);
 		}
 	}
 }
