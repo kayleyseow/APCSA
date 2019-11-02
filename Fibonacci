@@ -11,7 +11,10 @@ public class Fibonacci {
 		System.out.println(number1);
 		System.out.println(number2);
 		for (int i=3; i <= numberOfTerms; i++){
-			
+			number3 = number1+number2;
+			System.out.println(number3);
+			number1=number2;
+			number2=number3;
 		}
 	}
 }
