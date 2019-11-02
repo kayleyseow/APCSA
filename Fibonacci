@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Fibonacci {
+	public static void main (String[] args) {
+		long number1 = 0;
+		long number2 = 1;
+		long number3;
+		System.out.print("Enter number of terms: ");
+		}
+	}
+}
