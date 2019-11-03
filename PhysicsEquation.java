@@ -1,4 +1,4 @@
-public class Physicsequ{
+public class PhysicsEquation{
 	public static void main(String[] args) {
 		double s0 = 12.0;
 		double v0 = 3.5;
