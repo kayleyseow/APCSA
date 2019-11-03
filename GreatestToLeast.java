@@ -19,6 +19,18 @@ public class GreatestToLeast{
 				System.out.println(c+" "+a+" "+b);
 			}
 		}
-		
+		else{
+			if (a>c) {
+				System.out.println(b+" "+a+" "+c);	
+			}
+			else{
+				if (b>c) {
+					System.out.println(b+" "+c+" "+a);
+				}
+				else{
+					System.out.println(c+" "+b+" "+a);
+				}
+			}
+		}
 	}
 }
