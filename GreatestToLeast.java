@@ -6,7 +6,19 @@ public class GreatestToLeast{
 		int a = console.nextInt();
 		int b = console.nextInt();
 		int c = console.nextInt();
-		
+		if (a>b) {
+			if(a>c){
+				if (b>c) {
+					System.out.println(a+" "+b+" "+c);
+				}
+				else{
+					System.out.println(a+" "+c+" "+b);
+				}
+			}
+			else{
+				System.out.println(c+" "+a+" "+b);
+			}
 		}
+		
 	}
 }
