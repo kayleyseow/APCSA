@@ -1,4 +1,4 @@
-public class DrawStairsFinal{
+public class DrawStairs{
 	public static final int TOTAL_STAIRS = 7;
 	public static final String SPACE = ("     ");
 
