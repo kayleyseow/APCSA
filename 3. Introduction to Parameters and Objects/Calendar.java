@@ -1,3 +1,6 @@
+//Write a program that produces calendars as output. Your program should have a method that outputs a single 
+//month’s calendar like the one below, given parameters to specify how many days are in the month and what the date 
+//of the first Sunday is in that month. In the month shown below, these values are 31 and 6, respectively.
 import java.util.*;
 public class Calendar {
   public static void main(String args[]) {
