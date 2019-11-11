@@ -1,3 +1,16 @@
+/*
+  Create a program that takes a string of operations
+  (+,-,*,/,^) and returns the mathematical result.
+  Assume that all numbers are 1 digit, and ignore
+  the order of operations, just evaluate from L to R.
+
+  Examples:
+  Input : 9*3+4/9
+  Output: 3.44
+
+  Input : 9*3^2/3*5
+  Output: 1215.00
+*/
 import java.util.*; 
 public class OneLineCalculator{
     public static void main(String[] args) {
