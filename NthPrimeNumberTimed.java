@@ -1,3 +1,4 @@
+//code to find nth prime number with timers
 import java.util.*;
 public class NthPrimeNumberTimed{
 	public static void main(String[] args) {
