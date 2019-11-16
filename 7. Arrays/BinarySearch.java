@@ -34,6 +34,15 @@ public class BinarySearch {
                 return -1;
             }
         }
-
+        int mid = (start+end)/2;
+        if(input[mid]==element){
+            return mid;
+        }
+        else if(input[mid]>element){
+            return binarySearch(input,element,start,mid-1);   
+        }
+        else{
+            return binarySearch(input,element,mid+1,end);
+        }
     }
 }
