@@ -19,5 +19,21 @@ public class BinarySearch {
             System.out.println("Number Not Found.");
         }
     }
+        public static int binarySearch(int input[], int element) {
+        int start,end;
+        start = 0;
+        end = input.length-1;
+        return binarySearch(input,element,start,end);   
+    }
+    public static int binarySearch(int input[], int element, int start, int end){
+        if(start>=end){
+            if(input[end]==element){
+                return end;
+            }
+            else{
+                return -1;
+            }
+        }
 
+    }
 }
