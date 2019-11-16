@@ -11,7 +11,15 @@ public class MaximumNumberAndLoops {
            }
            System.out.print("|");
        }
-       
-      }
+       System.out.println();
+       //Print 1 to maxNum with 0 at the end once for every loop
+       for (int i = 1;i<=loops;i++){
+           for (int j = 1;j<=maxNum;j++){
+               System.out.print(j);
+               if (j==maxNum){
+                   System.out.print(0);
+               }
+           }
+       }
    }
 }
