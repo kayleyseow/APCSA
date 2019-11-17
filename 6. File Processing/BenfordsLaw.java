@@ -1,3 +1,23 @@
+/*
+Write a program that finds the distribution of leading digits in a
+set of positive integers. Your program will be useful for exploring
+the phenomenon known as Benford's Law.  See Piazza for the complete
+problem description.
+Here is one example of console input/output [The apostrophe in "Let's"  is problematic with HyperGrade.  That is way "Let us" in used instead]:
+Let us count those leading digits...
+input file name? 4BenfordLinear.txt
+Digit Count Percent
+    1     5  11.11
+    2     5  11.11
+    3     5  11.11
+    4     5  11.11
+    5     5  11.11
+    6     5  11.11
+    7     5  11.11
+    8     5  11.11
+    9     5  11.11
+Total    45 100.00
+*/
 import java.util.*;
 import java.io.*;
 public class BenfordsLaw {
