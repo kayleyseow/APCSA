@@ -36,5 +36,25 @@ public class BenfordsLaw {
         }
         return 0;
     }
-
+    //method to find the first digit of the number
+    public static int firstdigit(int n) {
+        int result = Math.abs(n);
+        while (result >= 10) {
+            result = result / 10;//logic: divide everything by ten and when the while loop is going on, you will find the first digit
+        }
+        return result;//returns because not void
+    }
+    //method to print out the final things 
+    public static void finalresult(int[] number) {
+        if (number[0] > 0) { // just in case there r zeroes
+            System.out.println("excluding "+ number[0] +  " zeros");
+        }
+        int total = sum(number ) - number[0];
+        System.out.println("Digit Count Percent"); //format the top line
+        for (int i = 1; i < number.length; i++) { //sets up the forloop
+            double percent = number[i] *100.0  / total; //prints out the percent 
+            System.out.printf("%5d %5d %6.2f\n", i, number[i], percent); //print f to format the placement of the numbers and the decimals
+        }
+        System.out.printf("Total %5d %6.2f\n", total, 100.0);//print f for formatting, includes the total
+    }
 }
