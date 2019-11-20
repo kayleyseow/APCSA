@@ -12,10 +12,19 @@ public class FenceArea{
             int y1 = input.nextInt();
             int x2 = input.nextInt();
             int y2 = input.nextInt();
-
+            if (x1 < leastx) {
+                leastx = x1;
+            }
+            if (y1 > maxy) {
+                maxy = y1;
+            }
+            if (x2 > maxx) {
+                 maxx = x2;
+            }
+            if (y2 < leasty) {
+                leasty = y2;
+            }
         }
         System.out.println(2*(maxx - leastx)+2*(maxy - leasty));
     }
-
 }
-
