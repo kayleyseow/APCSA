@@ -1,3 +1,9 @@
+/*
+pastures are planted at coordinates, which can be measured by 
+upper left corner (x1, y1) and bottom right corner (x2, y2).
+Please write a program to help him find how much fence he needs
+to buy. 
+*/
 import java.util.*;
 public class FenceArea{
 	public static void main(String[] args) {
