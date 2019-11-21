@@ -1,3 +1,17 @@
+/*
+Write a function that returns the factorial of a natural number, defined as
+n! = n * (n-1) * (n-2) * . . . * 3 * 2 * 1.
+	public static int factorial(int n){}
+Using the above function if necessary, write a method that returns the superfactorial
+of a natural number, defined as
+n? = n! * (n-1)! * (n-2)! * . . . * 3! * 2! * 1
+	public static int superfactorial(int n){}
+Using the above function if necessary, write a method that returns the ultrafactorial
+of a natural number, defined as
+n$ = n? * (n-1)? * (n-2)? * . . . * 3?! * 2?! * 1
+	public static int ultrafactorial(int n){}
+In each case, report your result % the 10,000,001st prime.
+*/
 import java.util.Scanner;
 public class UltraFactorial{
 	public static void main(String[] args){
