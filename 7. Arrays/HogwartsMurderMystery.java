@@ -22,6 +22,9 @@ public class HogwartsMurderMystery{
           i = 0;
       }
     }
+    if(i == 4){
 
+    }
+    System.out.println();
   }
 }
