@@ -21,6 +21,13 @@ public class Parentheses{
 			else if ((int)parenthesis.charAt(i) == 41) {
 				valley--;
 			}
-
+		}
+		if (valley == 0) {
+			System.out.println("true");
+			System.out.println(highest);	
+		}
+		else if (valley>0){
+			System.out.println("false");
+		}
    	}
 }
