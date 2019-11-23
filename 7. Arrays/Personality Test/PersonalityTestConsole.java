@@ -21,5 +21,20 @@ public class PersonalityTestConsole{
       Scanner readinputfile = new Scanner(inputfile); //Now the file is present, using Scanner to open the file
       scanInputFileLine(readinputfile);
   }
+  public static void scanInputFileLine(Scanner input) {
+  String[] result = new String[2];
+  boolean printinputfile = true;
+    while (input.hasNextLine()) { // Check for last line in file
+      String name = input.nextLine() + ":"; // Contain user name
+      String inputdata = input.nextLine();  // Contain result
+      inputdata = inputdata.toUpperCase();  // Convert to Upper case
+      result = calculations(stringtochar(inputdata)); // Calcualte the result
+    	System.out.print(name + "\n");
+			System.out.print("    " + result[0] + "\n");
+			System.out.print("    " + result[1] + "\n");
+      if (input.hasNextLine()==true) {
+        System.out.println("");
+      printinputfile = false;
+  }
 
 }
