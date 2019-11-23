@@ -36,5 +36,12 @@ public class PersonalityTestConsole{
         System.out.println("");
       printinputfile = false;
   }
+  public static char[] stringtochar(String input){
+  	char[] charstring = new char[70];
+      for (int i = 0; i<70; i++){
+        charstring[i] = input.charAt(i); //Copy char in string to char array
+    	}
+    	return charstring;
+    }
 
 }
