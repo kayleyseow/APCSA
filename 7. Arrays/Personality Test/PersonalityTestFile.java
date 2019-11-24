@@ -18,5 +18,29 @@ public class PersonalityTestFile{
 		  String outputfilename = console.nextLine();
   	  scanInputFileLine(readinputfile, outputfilename);
   }
+    public static void scanInputFileLine(Scanner input, String output) {
+  String[] result = new String[2];
+  boolean printinputfile = true;
+  // Open output file and write the result       
+  try(FileWriter fileWriter = new FileWriter(output)) {
+    while (input.hasNextLine()) { // Check for last line in file
+      //System.out.println(input.nextLine()+ ":"); // Print out name
+      String name = input.nextLine() + ":"; // Contain user name
+      String inputdata = input.nextLine();  // Contain result
+      inputdata = inputdata.toUpperCase();  // Convert to Upper case
+      result = calculations(stringtochar(inputdata)); // Calcualte the result
+      if (printinputfile == true){
+        fileWriter.write("Input file name: " + name + "\n");
+      } else{
+    	  fileWriter.write(name + "\n");
+      }
+			fileWriter.write("    " + result[0] + "\n");
+			fileWriter.write("    " + result[1] + "\n\n");
+      printinputfile = false;
+      }
+		} catch (Exception e) {
+			e.printStackTrace();
+	  }
+  }
 
 }
