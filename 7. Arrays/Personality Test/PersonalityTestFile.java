@@ -1,3 +1,11 @@
+/*
+Using FileWriter, this code saves the answer as a file instead of displaying in the console
+Write a program PersonalityTest.java to process data for the Keirsey
+Temperament Sorter.
+Your input file, e.g. Personality.txt, must be stored in the same folder as
+PersonalityTest.java. You will output to the console - as always follow the
+output format exactly.
+*/
 import java.io.File;
 import java.io.FileWriter;
 import java.util.*;
