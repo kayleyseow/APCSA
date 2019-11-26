@@ -1,3 +1,10 @@
+/*
+Given the maximum number and number of loops, print a structure like the following.
+Ex INPUT: 7, 4
+OUTPUT:
+       |       |       |       |
+12345670123456701234567012345670
+*/
 import java.util.Scanner;
 public class MaximumNumberAndLoops {
    public static void main(String[] args) {
