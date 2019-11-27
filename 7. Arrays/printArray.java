@@ -11,6 +11,12 @@ public class printArray{
         }
         printanarray(array);
 	}
-
+	//prints an array with spaces between the elements and new line after the last element
+	public static void printanarray(int[] array){
+		for (int i = 0;i<array.length ;i++ ) {
+			System.out.print(array[i]+" ");
+		}
+		System.out.println(array[array.length-1]);
+	}
 }
 	
