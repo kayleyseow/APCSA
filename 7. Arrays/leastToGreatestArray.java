@@ -1,3 +1,4 @@
+//checks to see if the elements in an array are from least to greatest
 import java.util.*;
 public class leastToGreatestArray{
 	public static void main(String[] args) {
