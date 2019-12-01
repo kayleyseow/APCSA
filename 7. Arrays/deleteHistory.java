@@ -1,3 +1,9 @@
+/*
+write a method deleteHistory that takes in an 
+integer array and a search value as parameters 
+and returns an array that erases all instances 
+of the given array 
+*/
 import java.util.*;
 public class deleteHistory{
 	public static void main(String[] args) {
@@ -30,4 +36,3 @@ public class deleteHistory{
 		}
 	}
 }
-	
