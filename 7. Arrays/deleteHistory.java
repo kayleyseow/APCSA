@@ -13,6 +13,21 @@ public class deleteHistory{
 		int deletevalue = console.nextInt();
 		DeleteHistorymethod(array,deletevalue);
 	}
-
+	public static void DeleteHistorymethod(int[] array, int x){
+		int[] array2 = new int[array.length];
+		int counter = 0;
+		for (int i = 0;i<array.length ;i++ ) {
+			if (array[i]!=x) {
+				array2[counter++]=array[i];
+			}
+		}
+		int[] array3 = new int[array2.length];
+		for (int i = 0;i<array2.length;i++ ) {
+			array3[i] = array2[i];
+		}
+		for (int i = 0;i<array3.length ;i++ ) {
+			System.out.println(array3[i]+ " ");
+		}
+	}
 }
 	
