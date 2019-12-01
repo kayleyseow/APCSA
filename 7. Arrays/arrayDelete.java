@@ -1,3 +1,4 @@
+//deletes an element at a certain index of the array
 import java.util.*;
 public class arrayDelete{
 	public static void main(String[] args) {
