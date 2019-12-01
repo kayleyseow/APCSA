@@ -9,9 +9,9 @@ public class deleteHistory{
 		for(int i =0;i<elementsinarray;i++) {
 			array[i] = console.nextInt();
 		}
-        System.out.println("Please enter number that you want to erase: ");
-        int deletevalue = console.nextInt();
-        DeleteHistorymethod(array,deletevalue);
+		System.out.println("Please enter number that you want to erase: ");
+		int deletevalue = console.nextInt();
+		DeleteHistorymethod(array,deletevalue);
 	}
 
 }
