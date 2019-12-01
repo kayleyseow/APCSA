@@ -6,12 +6,29 @@ public class arrayDelete{
 		int elementsinarray = console.nextInt();
 		System.out.println("Please enter your array: ");
 		int[] array = new int[elementsinarray];
-        for(int i =0;i<elementsinarray;i++) {
-            array[i] = console.nextInt();
-        }
+		for(int i =0;i<elementsinarray;i++) {
+			array[i] = console.nextInt();
+		}
 		System.out.println("Please enter index which you want to delete: ");
 		int indexdelete = console.nextInt();
-        arrayDelete(array,indexdelete);
+		arrayDelete(array,indexdelete);
 	}
-
+	public static void arrayDelete(int[] array, int x){
+		if (x<0||x>=array.length) {
+			for(int i =0;i<array.length;i++) {
+				System.out.println(array[i]);
+			}
+		}
+		else {
+			int[] deleted = new int[(array.length-1)];
+			int counter = 0;
+			for (int i = 0;i<array.length;i++ ) {
+				if (i!=x) {
+					deleted[counter] = array[i];
+					System.out.println(array[i]);
+					counter++;
+				}		
+			}
+		}
+	}
 }	
