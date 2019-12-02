@@ -1,3 +1,5 @@
+// write a program that prints out a number in reverse 
+// order and checks to see if it is a palindrome
 import java.util.*;
 public class numberPalindrome{
 	public static void main(String[] args) {
