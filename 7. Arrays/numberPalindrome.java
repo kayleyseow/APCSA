@@ -14,5 +14,19 @@ public class numberPalindrome{
 			System.out.println(array[i] + " ");
 		}
 	}
-
+		public static boolean Palindrome(int[] array){
+		boolean tf = true;
+		int[] array2 = new int[array.length];
+		int counter = array.length-1;
+		for (int i = 0;i<array.length ;i++ ) {
+			array2[counter--] = array[i];
+		}
+		for (int i = 0;i<array.length ;i++ ) {
+			if (array2[i] == array[i]) {
+			} else{
+				tf = false;
+			}
+		}
+		return tf;
+	}
 }	
