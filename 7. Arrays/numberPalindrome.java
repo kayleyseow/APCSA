@@ -6,13 +6,13 @@ public class numberPalindrome{
 		int elementsinarray = console.nextInt();
 		System.out.println("Please enter your array: ");
 		int[] array = new int[elementsinarray];
-        for(int i =0;i<elementsinarray;i++) {
-            array[i] = console.nextInt();
-        }
-        Palindrome(array);
-        for (int i = 0;i<array.length ;i++ ) {
-        	System.out.println(array[i] + " ");
-        }
+        	for(int i =0;i<elementsinarray;i++) {
+			array[i] = console.nextInt();
+		}
+		Palindrome(array);
+		for (int i = 0;i<array.length ;i++ ) {
+			System.out.println(array[i] + " ");
+		}
 	}
 
 }	
