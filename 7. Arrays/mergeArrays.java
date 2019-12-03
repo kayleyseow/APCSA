@@ -1,3 +1,6 @@
+//Write a method mergeArrays that takes two int arrays sorted from least to 
+//greatest as parameters and returns a merged array. YOU MAY NOT USE ANY 
+//SORTING ALGORITHMS OR ARRAYS.SORT.
 import java.util.*;
 public class mergeArrays{
 	public static void main(String[] args) {
