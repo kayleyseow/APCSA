@@ -17,9 +17,9 @@ public class mergeArrays{
 			array2[i] = console.nextInt();
 		}
 		mergeArrays(array, array2);
-        for (int i = 0;i<array.length ;i++ ) {
-        	System.out.println(array[i] + " ");
-        }
+		for (int i = 0;i<array.length ;i++ ) {
+			System.out.println(array[i] + " ");
+		}
 	}
 
 }	
