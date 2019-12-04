@@ -1,4 +1,4 @@
-import java.util.*;
+// method which takes in a boolean array and returns a character array
 public class owo{
 	public static void main(String[] args) {
 		boolean[] chararray = new boolean[]{false, false, true, true};
