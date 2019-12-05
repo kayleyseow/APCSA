@@ -52,5 +52,48 @@ public class PascalFibonacci {
     }  
     System.out.print("]"); 
   }  
-
+  public static long calculatefibonacci(int index, long[][] array){//calculates the fibonacci sequence
+    long sum = 0;
+    int column = 0;
+    if (index==1) {
+      printarrayindex(0,0,array);
+      sum=1;
+    }
+    else{
+      for (int row = index-1;row>0 ;row-- ) {
+        if (row < column) {
+          break;
+        }
+        if (array[row][column]<0) {
+          array[row][column]=0;
+        }
+        sum += array[row][column];
+        printarrayindex(row, column, array);
+        column ++;
+      }
+    }
+    System.out.println("-----------------------");
+    if (sum<0) {
+      sum=0;  //if the sum is larger than what a long can hold, it means that it is negative
+    }//if the number is negative, then has to be changed to a zero
+    return sum;
+  } 
+  public static void printarrayindex(int row, int column, long[][] array){
+    if (row==0&&column==0) {
+      System.out.println("arrPascal[0][0]   = 1");
+    }
+    else{
+      System.out.print("arrPascal[" + row + "][" + column + "]");
+      if (column<10&&row<10) {
+        System.out.print("   ");
+      }
+      else if ((column<10&&row>=10)||(column>=10&&row<10)) {
+        System.out.print("  ");
+      }
+      else{
+        System.out.print(" ");      
+      }
+      System.out.println("= " + array[row][column]);
+    }
+  }
 }
