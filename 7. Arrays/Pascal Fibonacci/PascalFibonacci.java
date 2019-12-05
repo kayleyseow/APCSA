@@ -18,6 +18,27 @@ public class PascalFibonacci {
     System.out.println("Fibonacci("+ fibonacciindex + ")     = " + calculatefibonacci(fibonacciindex,arrPascal));
     printRow(arrPascal, fibonacciindex-1);
   } 
+  public static long[][] fillPascalsTriangle(long[][] array){
+    int maxrows = array.length; // prints number of rows
+    int maxcols = array[0].length; // prints number of columns
+    array[0][0] = 1;//hardcode
+    array[1][0] = 1;//hardcode
+    array[1][1] = 1;//hardcode
+    for (int rows = 2;rows<maxrows ;rows++ ) {
+      array[rows][0] = 1;
+      array[rows][rows] = 1;
+      for (int cols = 0;cols<=rows-1 ;cols++ ) {
+         array[rows][cols+1] = array[rows-1][cols]+array[rows-1][cols+1];
+         //if (array[rows][cols+1]<0) { // prints 0 when negative because larger value than long
+          //System.out.print("row: "+rows+" column"+ cols + " = " + array[rows][cols+1]);
+          //array[rows][cols+1]=0;
+          //System.out.println("new = "+ array[rows][cols+1]);
+          //System.out.println("row: "+ rows + " column: "+ cols);//check largest fibonacci number
+        // }
+      } 
+    }
+    return array;
+  }
 
   }
 }
