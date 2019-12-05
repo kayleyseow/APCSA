@@ -29,12 +29,6 @@ public class PascalFibonacci {
       array[rows][rows] = 1;
       for (int cols = 0;cols<=rows-1 ;cols++ ) {
          array[rows][cols+1] = array[rows-1][cols]+array[rows-1][cols+1];
-         //if (array[rows][cols+1]<0) { // prints 0 when negative because larger value than long
-          //System.out.print("row: "+rows+" column"+ cols + " = " + array[rows][cols+1]);
-          //array[rows][cols+1]=0;
-          //System.out.println("new = "+ array[rows][cols+1]);
-          //System.out.println("row: "+ rows + " column: "+ cols);//check largest fibonacci number
-        // }
       } 
     }
     return array;
