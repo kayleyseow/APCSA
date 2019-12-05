@@ -33,6 +33,24 @@ public class PascalFibonacci {
     }
     return array;
   }
+  public static void printRow(long[][] array, int row) { //method prints the last row of numbers
+    System.out.print("[");
+    if (row==0) {
+      System.out.print(array[0][0]);
+    } 
+    else{
 
-  }
+      for (int i = 0; i <= row; i++) {
+
+        if (i == row) {
+          System.out.print(array[row][i]);//fencepost
+        }
+        else{
+          System.out.print(array[row][i] + ", ");
+        } 
+      }       
+    }  
+    System.out.print("]"); 
+  }  
+
 }
