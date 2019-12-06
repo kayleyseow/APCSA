@@ -13,8 +13,23 @@ public class PascalFibonacci2 {
       	pascal[i][0] = 1;
       	pascal[i][i] = 1;
     }
+    for (int i = 2; i < 92; i++) {
+      for (int j = 1; j < i; j++) {
+      	if ( pascal[i-1][j-1] > 0 && pascal[i-1][j] > 0) {
+        	pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j];
+        }
+        else {
+        	pascal[i][j] = 0;
+        }
+        if (pascal[i][j] < 0) {
+        	pascal[i][j]=0;
+        }
+
+      }
+    }
 
 
+  }
 }
 /*
 1
