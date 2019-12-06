@@ -1,4 +1,19 @@
 public class PascalFibonacci2 {
+  public static void main(String[] args) {
+    Scanner console = new Scanner(System.in);
+    System.out.print("Input row index: ");
+    int r = console.nextInt();
+    System.out.print("Input column index: ");
+    int c = console.nextInt();
+    int r2 = r;
+    int c2 = c;
+    int last_row = r2 + c2;
+    long[][] pascal = new long[92][92];
+    for (int i = 0; i < 92; i++) {
+      	pascal[i][0] = 1;
+      	pascal[i][i] = 1;
+    }
+
 
 }
 /*
