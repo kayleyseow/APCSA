@@ -27,7 +27,20 @@ public class PascalFibonacci2 {
 
       }
     }
+    long sum = 0;
 
+    r2 += c2;
+    c2 = 0;
+    int fib = r2+1;
+    while( r2 >= c2 ) {
+      String p = "arrPascal["+r2+"]["+c2+"]";
+      System.out.printf("%-18s= ",p);
+      System.out.println(pascal[r2][c2]);
+      if ( pascal[r2][c2] > 0)
+      	sum += pascal[r2][c2];
+      r2--;
+      c2++;
+    }
 
   }
 }
