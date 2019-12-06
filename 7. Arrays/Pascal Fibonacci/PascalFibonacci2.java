@@ -28,7 +28,6 @@ public class PascalFibonacci2 {
       }
     }
     long sum = 0;
-
     r2 += c2;
     c2 = 0;
     int fib = r2+1;
@@ -41,7 +40,15 @@ public class PascalFibonacci2 {
       r2--;
       c2++;
     }
-
+    System.out.println("-----------------------");
+    System.out.println("Fibonacci("+fib+")     = " + sum);
+    int i = 1;
+    System.out.print("[1, ");
+    while(pascal[last_row][i] != 1){
+      System.out.print(pascal[last_row][i]+", ");
+      i++;
+    }
+    System.out.print("1]");
   }
 }
 /*
