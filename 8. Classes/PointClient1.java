@@ -1,4 +1,7 @@
+/*
+Point 1
 
+*/
 public class PointClient{
     public static void main(String[] args){
         Point moo = new Point(3,3);
