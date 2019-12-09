@@ -19,6 +19,22 @@ public class Point{
         y+=dy;
     }
     //return the point's x-value
+    public int getX(){
+        return x;
+    }
+    //return the point's y-value
+    public int getY(){
+        return y;
+    }
+    //set the point's x and y values to the given values
+    public void setXY(int setX,int setY){
+        x = setX;
+        y = setY;
+    }
+//Start the Point2 assignment
+    public String toString() { //returns the wanted string
+        return ("(" + x + ", " + y + ")");
+    }
 
 }
 
