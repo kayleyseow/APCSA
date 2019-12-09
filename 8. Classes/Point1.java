@@ -18,5 +18,13 @@ public class Point1{
 		x+=dx;
 		y+=dy;
 	}
+	//return the point's x-value
+	public int getX(){
+		return x;
+	}
+	//return the point's y-value
+	public int getY(){
+		return y;
+	}
 
 }
