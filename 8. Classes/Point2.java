@@ -8,6 +8,7 @@ public class Point{
         x = initialX;
         y = initialY;
     }
+    //construct a new point with (x,y) = (0,0)
 
 }
 
