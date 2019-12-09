@@ -9,6 +9,11 @@ public class Point{
         y = initialY;
     }
     //construct a new point with (x,y) = (0,0)
+    public Point(){ // fields are given default values of 0
+        x=0;
+        y=0;
+    }
+
 
 }
 
