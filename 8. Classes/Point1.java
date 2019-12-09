@@ -8,5 +8,10 @@ public class Point1{
 		x = initialX;
 		y = initialY;
 	}
+	//construct a new point with (x,y) = (0,0)
+	public Point1(){ // fields are given default values of 0
+		x=0;
+		y=0;
+	}
 
 }
