@@ -26,5 +26,9 @@ public class Point1{
 	public int getY(){
 		return y;
 	}
-
+	//set the point's x and y values to the given values
+	public void setXY(int setX,int setY){
+		x = setX;
+		y = setY;
+	}
 }
