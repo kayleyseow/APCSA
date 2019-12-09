@@ -13,5 +13,10 @@ public class Point1{
 		x=0;
 		y=0;
 	}
+	//shift the point's location by the given amount
+	public void translate (int dx, int dy){
+		x+=dx;
+		y+=dy;
+	}
 
 }
