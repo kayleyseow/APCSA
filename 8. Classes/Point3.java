@@ -65,5 +65,11 @@ public class Point {
     public double distanceToOrigin(){ //returns distance from (x, y) to origin (use double)
         return Math.sqrt(x*x + y*y);
     }
-
+// start the Point3 assignment
+    public double slope(Point other){ // returns the slope between two points (double)
+        int deltay = (other.getY()-y);
+        int deltax = (other.getX()-x);
+        double slopeeq = (double)deltay/(double)deltax;
+        return slopeeq;
+    }    
 }
