@@ -8,5 +8,15 @@ public class Point {
         x = initialX;
         y = initialY;
     }
+    //construct a new point with (x,y) = (0,0)
+    public Point(){ // fields are given default values of 0
+        x=0;
+        y=0;
+    }
+    //shift the point's location by the given amount
+    public void translate (int dx, int dy){
+        x+=dx;
+        y+=dy;
+    }
 
 }
