@@ -23,5 +23,47 @@ public class Point {
         return x;
     }
     //return the point's y-value
+    public int getY(){
+        return y;
+    }
+    //set the point's x and y values to the given values
+    public void setXY(int setX,int setY){
+        x = setX;
+        y = setY;
+    }
+//Start the Point2 assignment
+    public String toString() { //returns the wanted string
+        return ("(" + x + ", " + y + ")");
+    }
+    public int getQuadrant() { //returns which quardrant the point belongs to, or 0 if the point is on an axis
+        if(x>0){
+            if (y>0) {
+                return 1;
+            }
+            else if (y<0){
+                return 4;
+            }
+            else {
+                return 0;
+            }
+        }
+        else if (x<0){
+            if (y>0) {
+                return 2;
+            }
+            else if (y<0){
+                return 3;
+            }    
+            else{
+                return 0;
+            }        
+        }
+        else {
+            return 0;
+        }
+    }
+    public double distanceToOrigin(){ //returns distance from (x, y) to origin (use double)
+        return Math.sqrt(x*x + y*y);
+    }
 
 }
