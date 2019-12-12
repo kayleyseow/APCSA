@@ -28,3 +28,9 @@ public class TicketClient{
 		System.out.println(sat1);
 		System.out.println();
 	}
+	public static int getNumber(String prompt, Scanner console){
+		System.out.print(prompt);
+		int num = console.nextInt();
+		return num;
+	}
+}
