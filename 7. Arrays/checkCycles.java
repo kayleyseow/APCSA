@@ -3,7 +3,12 @@ Write a method called checkCycles() that takes an integer array and a
 cycle length N as the input and the outputs true if the array contains a 
 cycle length of N. Consider each element of the array as pointing to the 
 net index in a walk through the array. If you start at the index i_0 and 
+go to index arr[i_0] and continue this process, a cycle is formed if you 
+eventually come back to the same element. The number of hops you 
+take to come back to the same element. The number of hops you take 
+to come back to the same element is the cycle length.
 */
+
 import java.util.*;
 public class checkCycles{
 	public static void main(String[] args) {
