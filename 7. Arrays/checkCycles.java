@@ -1,3 +1,9 @@
+/*
+Write a method called checkCycles() that takes an integer array and a 
+cycle length N as the input and the outputs true if the array contains a 
+cycle length of N. Consider each element of the array as pointing to the 
+net index in a walk through the array. If you start at the index i_0 and 
+*/
 import java.util.*;
 public class checkCycles{
 	public static void main(String[] args) {
