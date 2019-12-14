@@ -6,6 +6,9 @@ public class checkCycles{
 		int elements = console.nextInt();
 		System.out.println("Please enter your array: ");
 		int[] array = new int[elements];
+        for(int i =0;i<elements;i++) {
+            array[i] = console.nextInt();
+        }	
 
 	}
 }
