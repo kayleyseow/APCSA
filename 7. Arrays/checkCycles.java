@@ -9,6 +9,12 @@ public class checkCycles{
         for(int i =0;i<elements;i++) {
             array[i] = console.nextInt();
         }	
+        System.out.println("Please enter an integer cycle length: ");
+        int cyclelength = console.nextInt();
+        System.out.println(checkCycles(array,cyclelength));
+	}
+	public static boolean checkCycles(int[] array, int n){
+		int next = n;
 
 	}
 }
