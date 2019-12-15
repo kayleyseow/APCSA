@@ -7,5 +7,14 @@ public class StudentAdvanceTicket extends AdvanceTicket{
         this.diasat=days;
         this.numsat=number;
     }
+    public int getNumber(){
+    	return super.dia;
+    }
+    //public double getPrice();
+    public double getPrice(){
+        //System.out.println(super.getPrice());
+        //this.satprice = super.getPrice();
+    	return super.getPrice()/2;
+    }
 
 }
