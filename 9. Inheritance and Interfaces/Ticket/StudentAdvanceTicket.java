@@ -1,3 +1,4 @@
+
 public class StudentAdvanceTicket extends AdvanceTicket{
 	double satprice;
     int diasat;
@@ -10,11 +11,10 @@ public class StudentAdvanceTicket extends AdvanceTicket{
     public int getNumber(){
     	return super.dia;
     }
-    //public double getPrice();
     public double getPrice(){
-        //System.out.println(super.getPrice());
-        //this.satprice = super.getPrice();
     	return super.getPrice()/2;
     }
-
+    public String toString(){
+    	return "Number: "+  this.numsat+ ", Price: " + Double.toString(this.getPrice()) + " (ID required)";
+    }
 }
