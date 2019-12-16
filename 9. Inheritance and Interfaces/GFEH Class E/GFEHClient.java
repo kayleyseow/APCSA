@@ -15,3 +15,15 @@ public class GFEHClient{
 		}
 	}
 }
+/*
+Output:
+
+G
+G 1
+G 2
+
+F
+G 1
+F 2
+G 2
+
