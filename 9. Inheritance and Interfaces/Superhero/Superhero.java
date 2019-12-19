@@ -7,6 +7,6 @@ public class Superhero{
 	public void punch(){
 		System.out.println("Punch! Punch!");
 	}
-
+	public void punch(Superhero a){		//comment out for slide 28
 
 }
