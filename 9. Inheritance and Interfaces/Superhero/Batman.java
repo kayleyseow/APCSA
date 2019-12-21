@@ -4,5 +4,8 @@ public class Batman extends Superhero{
 		s = "NANANANANANANA";
 	}
 	public Batman(String s){
+		this.s = s;
+		System.out.println(this.s);
+	}
 
 }
