@@ -12,5 +12,7 @@ public class Batman extends Superhero{
 		super.punch(v);
 		System.out.println("BOOM " + s);
 	}
-
+	public void punch(Batman b){
+		System.out.println("Wat.");
+	}
 }
