@@ -1,3 +1,21 @@
+/*
+Write a program called interleave that accepts two ArrayLists of integers list1
+and list2 as parameters and inserts the elements of list2 into list1 at alternating
+indexes. If the lists are of unequal length, the remaining elements of the longer
+list are left at the end of list1. For example, if list1 stores
+[10, 20, 30] and list2 stores
+[4, 5, 6, 7, 8],
+the call of interleave(list1, list2); should change list1 to store
+[10, 4, 20, 5, 30, 6, 7, 8].
+If list1 had stored
+[10, 20, 30, 40, 50] and list2 had stored
+[6, 7, 8], the call of interleave(list1, list2); would change list1 to store
+[10, 6, 20, 7, 30, 8, 40, 50].
+The end of user input should be signified using a sentinel value of 0 (zero).
+Your code need not be robust, but the user may enter nothing but the sentinel
+value, i.e. an empty list.
+*/
+
 import java.util.*;
 public class interLeave{
     public static void main(String[] args){
