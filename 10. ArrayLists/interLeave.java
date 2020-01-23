@@ -13,7 +13,7 @@ If list1 had stored
 [10, 6, 20, 7, 30, 8, 40, 50].
 The end of user input should be signified using a sentinel value of 0 (zero).
 Your code need not be robust, but the user may enter nothing but the sentinel
-value, i.e. an empty list.
+value, e.g. an empty list.
 */
 
 import java.util.*;
