@@ -22,7 +22,6 @@ public class People{
         //System.out.println(namearraylist);
         //System.out.println(agearraylist);
         //System.out.println(weightarraylist);      
-        //Person printperson = new Person.printthing(namearraylist,agearraylist, weightarraylist);
         for (int i = 0;i<agearraylist.size();i++ ) {
             Person temporary = new Person(namearraylist.get(i),agearraylist.get(i), weightarraylist.get(i));
             System.out.print(temporary.printinfo());
