@@ -1,0 +1,16 @@
+Write a class called Count2 that takes an ArrayList of strings separated
+by spaces until the sentinel string, lastString, is encountered. Note: Unlike
+Count, the list of strings is not necessarily in alphabetical order. The class
+should list the number of instances of each unique term next to each term, in
+ascending order of occurence. If two terms have the same number of occurences,
+the term that appears first in the original list should show up first.  Assume
+that the user enters only lower case strings.
+
+Example:
+input:
+a b b a c c c lastString
+output:
+a 2
+b 2
+c 3
+Using maps is not allowed.
