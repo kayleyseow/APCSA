@@ -1,0 +1,16 @@
+Write a program called Count that takes an ArrayList of strings and lists the number
+of occurrences of unique strings as an arrayList in ascending order. You can asume the
+list of strings is in alphabetical order. Examples:
+
+[be, be, is, not, or, the, to, to] becomes [1,1,1,1,2,2] because is, not, or and the
+each occur once while be and to occur twice
+
+[a, a, a, a, a] becomes [5].
+
+Make your comparisons case insensitive, i.e.
+
+[a, a, A, a, a] also becomes [5].
+
+Have the user input strings from the console to populate your ArrayList.  Assume that
+the user enters only String values in alphabetical order. Use the sentinal "lastString"
+to signify the end of user input. Your code need not be robust.
