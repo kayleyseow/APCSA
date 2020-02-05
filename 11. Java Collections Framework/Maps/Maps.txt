@@ -1,0 +1,30 @@
+This is an exercise to familiarize you with maps.
+Documentation can be found here: https://docs.oracle.com/javase/8/docs/api/java/util/Map.html
+
+Imagine that you have a piece of text, and you want to count the number of occurrences of each
+word. Fortunately, Bob has already counted all the words for you, and he is providing the data
+as N strings with their respective counts. 
+
+However, he was doing this at 4 AM and he forgot a bunch of words. He then recounted and provided
+counts of the forgotten words as K strings and their respective counts. 
+
+Bob also has a set of Q favorite words, and he wants to know the total number of occurrences of
+his favorite words. In other words, he wants the sum of the counts of each of the Q words. Please
+output this sum modulo 10^9 + 7.
+
+You will be given 3 integers: N, the number of elements in the map, K, the number of forgotten
+words, and Q, the number of favorite words. You will be given N lines, each with a word and a count,
+then K lines, each with a word and a count, and finally Q lines, each with a single word.
+
+Example Input:
+3 2 1
+i 1
+like 1
+chicken 1
+chicken 30
+i 23
+chicken
+
+In this case, he originally sees 1 "i", 1 "like", and 1 "chicken". He then realizes he forgot 30
+"chicken" and 23 "i". His only favorite word is chicken, so the output would be 31.
+For some test cases, your implementation may need to use long rather than int.
