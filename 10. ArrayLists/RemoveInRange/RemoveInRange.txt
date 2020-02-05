@@ -1,0 +1,64 @@
+Write a class called RemoveInRange that accepts three parameters - an ArrayList of
+strings, a beginning string, and an ending string - and removes from the list any
+strings that fall alphabetically between the start and end strings, inclusively.
+
+You can assume that all strings are lower case.
+
+For example, if your method is passed a list containing the elements
+
+[how, to, get, over, the, hill, without, getting, to, the, top],
+
+"fast" as the start string and "talk" as the end string, the list's elements
+should be changed to
+
+[to, the, without, to, the, top].
+
+Assume that the start string precedes the end string alphabetically.
+
+Have the user input strings from the console to populate your ArrayList. The end of
+user input for your ArrayList should be signified by the user entering the String value
+"lastString" followed by a return. Your code need not be robust.
+
+Bonus opportunity(s):  create a sentence and a range such that an "interesting" new
+sentence or phrase results. Example: might be a question, from which
+the answer emerges after processing by RemoveInRange.
+1. perform ten slam dunk in succession
+when you do you will win some nuts or two
+lastString
+Start String: oar
+End String: zebra
+Reduced list: dunk in do nuts
+2. he has paint from mixing lemon with all the colors of green for illustrating leaves
+fluttering in the wind however he doesn't
+lastString
+Start String: deer
+End String: new
+Reduced list: paint with all the colors of the wind
+(This is a reference to the song "Colors of the Wind" from Pocahontas)
+1. how old is he?
+lastString
+Start: happy
+End: land
+Answer: old
+2. we walked past more mountains only to see
+lastString
+Start: myopia
+End: wyoming
+Answer: more mountains
+3. my brother watched the t.v. so now the t.v. is dead. wonder what our parents will think?
+lastString
+Start: mystery
+End: wreck
+Answer: my brother is dead
+4. gatsby hits myrtle unintentionally; thus she dies. yet she alone saw who really hit her.
+he is mistakenly identified. what happens to him?
+lastString
+Start: generation
+End: yummy
+Answer: gatsby dies alone
+5. I can’t wait to visit the library to research the number of people who graduate in the u.s. then 
+the librarian told me that some of my things weren’t returned. what will this result in?
+lastString
+Start: in
+End: won’t
+Answer: I can’t graduate
