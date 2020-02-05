@@ -33,16 +33,4 @@ public class RemoveInRange{
         }
         return stringList;
     }
-    /*public static char[] removePunctuation(String input){
-        //System.out.println("input: "+ input);
-        char[] char1 = input.toCharArray();
-        //System.out.println("input "+ input);
-        for (int i = 0;i<input.length() ;i++ ) {
-            if ((int)(char1[i])>=65&&(int)(char1[i])<=90) {
-                char1[i] = input.charAt(i);
-            }
-        }
-        //String rstr=
-        return char2;
-    }*/
 }
