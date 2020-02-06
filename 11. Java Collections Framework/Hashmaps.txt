@@ -1,0 +1,24 @@
+Hashmaps
+• Java HashMap implements the map interface through the has table
+• It extends AbstractMap
+• Key points about HashMaps(🤣 get it? KEY?)
+	- Contains values based on the key
+	- Contains only unique keys
+	- One null key and multiple null values
+	- Non-synchronized class
+	- Maintains no order
+	- default capacity is 16 with a load factor of 0.75
+• public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneable, Serializable  
+	- K is the type of keys in this map
+	- V is the type of mapped values
+• How to declare HashMap
+	- HashMap<Integer,String> map=new HashMap<Integer,String>();  
+	- The keys will be integers
+	- The values will be Strings
+• HashMap()
+	- Used to construct default HM
+• HashMap(K) 
+	- Initialize capacity of HM to given integer value
+• HashMap(K,M) 
+	- Initialize the capacity and load factors
+	- Using HM's arguments
