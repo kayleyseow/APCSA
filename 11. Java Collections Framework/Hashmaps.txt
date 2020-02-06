@@ -1,3 +1,0 @@
-Hashmaps
-• Java HashMap implements the map interface through the has table
-• It extends AbstractMap
