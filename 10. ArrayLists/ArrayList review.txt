@@ -1,0 +1,64 @@
+ArrayList review
+declare by using ArrayList<E> name = new ArrayList<E>();
+why does ArrayList use Integer and Double?
+	- the parameter is an object, not a primitive data type
+ArrayList sizes are dynamic
+important to consider what is going on with the size of the arraylist
+indexes get shifted when you are changing the size of the arraylist
+helpful methods you need for ArrayLists
+	- .add()
+		put in the object type
+		for integer ArrayList, use .add(Integer);
+	- .add(Object, index)
+		overloads the parameters
+		if you have 0 1 2 3 4
+		then alist.add(5,3)
+		you will end up with 0 1 2 5 3 4
+	- .get(index)
+		you will input the index and then you will get whatever is at the index
+	- .removeRange(Start, end)
+		removes all the values from index start to index before end
+		end is not removed, the one before end is
+		think [start, end)
+CompareTo
+	- Comparable and CompareTo
+		gives a weight metric to each object
+		you can order each object
+	- when you create a class, they all extend the Object Superclass
+	- you can write your own compareTo method
+//general code for your own compareTo method using another class
+public class A extends Comparable <A>{
+	String s;
+	int a;
+	double d;
+	//if the String is lower in the alphabet, comes first
+	// object 1: s=B,
+	// object 2: s=c,
+	@ Override // to override the original compareTo method
+	public A(String s, int a, double d){
+		this.s = s;
+		this.a = a;
+		this.d = d;
+	}
+	public int compareTo(A other){//compares .this() (computer knows it is referencing itself)
+		// one.compareTo(two)
+		int compare = this.s compareTo(other.s); // use the built in compareTo method
+		//+ means first string is ahead, - means first string is behind;
+		if(compare==0){
+			if (this.a == other.a){
+				if (this.d == other.d){
+					return 0;
+				}
+				else if (this.d<other.d){
+					return -1;
+				}
+				return 1;
+			}
+			else if (this.a<other.a){
+				return -1;
+			}
+			return 1;
+		}
+		return compare;
+	}
+}
