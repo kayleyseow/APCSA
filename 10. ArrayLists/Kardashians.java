@@ -1,3 +1,4 @@
+//to be used with the Kartrashians object (no ill will, just tryna learn how to use CompareTo/Comparable)
 import java.util.*;
 public class Kardashians{
 	 public static void main(String[] args){
