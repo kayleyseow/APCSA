@@ -1,0 +1,48 @@
+public class A extends Comparable <A>{			 //declare the new class, remember that it extends the comparable
+	private String s;							 //declaration of all the data types
+	private int a;
+	private double d;
+	@Override 									 //Overrides the original compareTo method
+	public A(String s, int a, double d){		 //the constructor for this class
+		this.s = s;
+		this.a = a;
+		this.d = d;
+	}
+	public int compareTo(A other){
+		int compare = this.s compareTo(other.s); //uses java's own built in compareTo method //compares to another string
+		if(compare==0){							 //if the two strings are equal to each other 	
+			if (this.a == other.a){				 //if the two ints are equal to each other 
+				if (this.d == other.d){			 //if the two doubles are equal to each other
+					return 0;					 //return 0 if everything is equal to each other
+				}								 
+				else if (this.d<other.d){		 //if the strings and ints are equal, but other double is larger	
+					return -1;					 //returns -1
+				}
+				return 1;						 //if the strings and ints are equal, but other double is smaller
+			}
+			else if (this.a<other.a){			 //if the strings are equal, but the other int is larger
+				return -1;
+			}
+			return 1;							 //if the strings are equal, but the other int is smaller
+		}
+		return compare;
+	}
+	public void sets (String s){				 //sets String s, int a, and double d
+		this.s = s;
+	}
+	public void seta (int a){
+		this.a = a;
+	}
+	public void setd (double d){
+		this.d = d;
+	}
+	public String gets (){						 //gets String s, int a, and double d
+		return s;
+	}
+	public int geta (){
+		return a;
+	}
+	public double getd (){
+		return d;
+	}	
+}
