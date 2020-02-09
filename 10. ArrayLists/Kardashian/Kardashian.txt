@@ -1,0 +1,10 @@
+Use the following code to answer the questions below and learn about comparable interface and compareTo:
+public class Kardashian implements Comparable<Kardashian> {
+	public String name;
+	public int eyebrowLength;
+	public double nailLength;
+}
+Write a compareTo method for the class above. The method should 
+first compare by name, then by eyebrowLength, then by nailLength.
+Write a method that takes an arraylist of Kardashians as input, 
+sorts them in ascending order, and returns the sorted arraylist.
