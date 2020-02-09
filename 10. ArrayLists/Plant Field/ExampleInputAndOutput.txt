@@ -1,0 +1,28 @@
+Example input:
+2 3 5 7 15
+Outputted Arraylist:
+1   
+2   L
+3	  LC
+4	  LCL
+5	  LCLR
+6	  LCLRLC
+7	  LCLRLC
+8	  LCLRLC
+	  L
+9	  LCLRLC
+	  LC
+10	LCLRLC
+	  LCLR
+11	LCLRLC
+	  LCLR
+12	LCLRLC
+	  LCLRLC
+13	LCLRLC
+	  LCLRLC
+14	LCLRLC
+	  LCLRLC
+	  L
+15	LCLRLC
+	  LCRLC
+	  LCR
