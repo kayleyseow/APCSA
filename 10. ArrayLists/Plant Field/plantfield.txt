@@ -1,0 +1,28 @@
+The farmer adds crops to his field every month. (note that 
+the field has no predetermined size). Each time the farmer adds a 
+crop, the farmer always adds it to the right of the crop he last 
+planted (along the row). The farmer may decide to add one, two, or 
+even three crops each month. 
+
+On the mth month where m is divisible by an integer l, the farmer 
+will always add a legume crop to his farm, denoted by L. 
+
+In the mth month where m is divisible by an integer c, the farmer 
+will always add a corn crop to his farm, denoted as C. 
+
+On the mth month where m is divisible by an integer r, the farmer 
+will always add a rice crop to his farm, denoted as R. 
+
+On the mth month where m is divisible by an integer k, the farmer 
+decides that there are too many crops on the given row, and 
+decides to switch over to the next row, which happens to lie just 
+under the previous row. 
+
+If multiple crops are to be planted at the same time, the order to 
+plant them is legumes, corn, then rice. If in a certain month, crops 
+are to be planted and rows are also to be changed, change the row 
+first before planting the crop. 
+
+Write a method that takes inputs for l, c, r, k, and the number of 
+months m. Return an arraylist of char arraylists that contains the 
+positions of the crops on the farmer’s field.
