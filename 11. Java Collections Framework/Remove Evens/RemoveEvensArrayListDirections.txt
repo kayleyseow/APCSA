@@ -1,0 +1,4 @@
+Write a program to remove all Strings of even length from a list of Strings.
+Do not be concerned with puncuation, special characters, etc. Treat any contiguous
+group of characters as a string.
+Your program will need to be efficient to avoid timing out in HyperGrade.
