@@ -1,0 +1,64 @@
+//numberStackUnstackTwoParameters prints numbers in ascending and then descending order using two parameters 
+import java.util.*;
+public class RecursionIntro{
+	public static void main(String[] args) {
+		Scanner console  = new Scanner(System.in);
+		System.out.print("enter an integer: ");
+		int number = console.nextInt();
+		System.out.println();
+    System.out.println("infinite recursion");
+		infiniteRecursion(1);//number does not matter, will recurse infinitely no matter what 
+		System.out.println();
+		System.out.println("printStarsForLoop");
+		printStarsForLoop(number);
+		System.out.println();
+    System.out.println("printStarsRecursion");
+		printStarsRecursion(number);
+		System.out.println();
+    System.out.println("StackUnstack");
+		StackUnstack(number);
+		System.out.println();
+    System.out.println("numberStackUnstackTwoParameters");
+		numberStackUnstack(number, number);
+		System.out.println();
+	}
+ 	public static void infiniteRecursion(int num){
+		System.out.println(num);
+		infiniteRecursion(num+1);
+		System.out.println(num);//nothing is printed
+	}
+	public static void printStarsForLoop(int num){
+		for (int i = 1;i<=num ; i++) {
+			System.out.println("*");
+		}
+	}
+  public static void printStarsRecursion(int num){
+		if (num==0) { // a recursive loop must have a base case
+			return;
+		}
+		else{
+			System.out.println("*");
+			printStarsRecursion(num-1); // recurse 
+		}
+	}
+  public static void stackUnstack(int num){
+		if (num==0) { // a recursive loop must have a base case
+			return;
+		}
+		else{
+			System.out.println("stack");
+			printStarsRecursion(num-1);
+			System.out.println("unstack");
+		}
+	}
+  public static void numberStackUnstackTwoParameters(int num, int val) {
+		if(num==0) {
+			return;
+		}
+		else {
+			System.out.println(val-num+1);
+			numberStackUnstackTwoParameters(num-1, val);
+			System.out.println(val-num+1);
+		}
+	}
+}
