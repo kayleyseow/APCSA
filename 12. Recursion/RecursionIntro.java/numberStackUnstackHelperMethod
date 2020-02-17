@@ -6,22 +6,22 @@ public class RecursionIntro{
 		System.out.print("enter an integer: ");
 		int number = console.nextInt();
 		System.out.println();
-    System.out.println("infinite recursion");
+    		System.out.println("infinite recursion");
 		infiniteRecursion(1);//number does not matter, will recurse infinitely no matter what 
 		System.out.println();
 		System.out.println("printStarsForLoop");
 		printStarsForLoop(number);
 		System.out.println();
-    System.out.println("printStarsRecursion");
+    		System.out.println("printStarsRecursion");
 		printStarsRecursion(number);
 		System.out.println();
-    System.out.println("StackUnstack");
+    		System.out.println("StackUnstack");
 		StackUnstack(number);
 		System.out.println();
-    System.out.println("numberStackUnstackTwoParameters");
+    		System.out.println("numberStackUnstackTwoParameters");
 		numberStackUnstackTwoParameters(number, number);
 		System.out.println();
-    System.out.println("numberStackUnstackHelperMethod");
+    		System.out.println("numberStackUnstackHelperMethod");
 		numberStackUnstackHelperMethod(number);
 		System.out.println();
 	}
@@ -35,7 +35,7 @@ public class RecursionIntro{
 			System.out.println("*");
 		}
 	}
-  public static void printStarsRecursion(int num){
+  	public static void printStarsRecursion(int num){
 		if (num==0) { // a recursive loop must have a base case
 			return;
 		}
@@ -44,7 +44,7 @@ public class RecursionIntro{
 			printStarsRecursion(num-1); // recurse 
 		}
 	}
-  public static void stackUnstack(int num){
+  	public static void stackUnstack(int num){
 		if (num==0) { // a recursive loop must have a base case
 			return;
 		}
@@ -54,7 +54,7 @@ public class RecursionIntro{
 			System.out.println("unstack");
 		}
 	}
-  public static void numberStackUnstackTwoParameters(int num, int val) {
+  	public static void numberStackUnstackTwoParameters(int num, int val) {
 		if(num==0) {
 			return;
 		}
@@ -64,7 +64,7 @@ public class RecursionIntro{
 			System.out.println(val-num+1);
 		}
 	}
-  public static void numberStackUnstackHelperMethod(int num){
+ 	 public static void numberStackUnstackHelperMethod(int num){
 		numberStackUnstackHelperMethodRecursion(num, 1);
 	}
 	public static void numberStackUnstackHelperMethodRecursion(int num, int n){
