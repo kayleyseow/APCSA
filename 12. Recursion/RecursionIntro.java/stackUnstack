@@ -45,7 +45,7 @@ public class RecursionIntro{
 		}
 		else{
 			System.out.println("stack");
-			printStarsRecursion(num-1);
+			stackUnstack(num-1);
 			System.out.println("unstack");
 		}
 	}
