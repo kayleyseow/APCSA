@@ -1,0 +1,20 @@
+//This method is an example of infinite recursion
+//Remember, java can only excecute one class at a time 
+//My laptop recurses about 11,500 times before crashing
+import java.util.*;
+public class RecursionIntro{
+	public static void main(String[] args) {
+		Scanner console  = new Scanner(System.in);
+		System.out.print("enter an integer: ");
+		int number = console.nextInt();
+		System.out.println();
+		System.out.println("infinite recursion");
+		infiniteRecursion(1);
+		System.out.println();
+	}
+	public static void infiniteRecursion(int num){
+		System.out.println(num);
+		infiniteRecursion(num+1);
+		System.out.println(num);//nothing is printed
+	}
+}
