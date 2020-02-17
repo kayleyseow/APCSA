@@ -1,0 +1,92 @@
+//spaced version of RecursionIntro
+import java.util.*;
+public class RecursionIntro{
+	public static void main(String[] args) {
+		Scanner console  = new Scanner(System.in);
+		System.out.print("enter an integer: ");
+		int number = console.nextInt();
+		System.out.println();
+    
+    		System.out.println("infinite recursion");
+		infiniteRecursion(1);//number does not matter, will recurse infinitely no matter what 
+		System.out.println();
+    
+		System.out.println("printStarsForLoop");
+		printStarsForLoop(number);
+		System.out.println();
+    
+    		System.out.println("printStarsRecursion");
+		printStarsRecursion(number);
+		System.out.println();
+    
+    		System.out.println(stackUnstack");
+		stackUnstack(number);
+		System.out.println();
+    
+    		System.out.println("numberStackUnstackTwoParameters");
+		numberStackUnstackTwoParameters(number, number);
+		System.out.println();
+    
+    		System.out.println("numberStackUnstackHelperMethod");
+		numberStackUnstackHelperMethod(number);
+		System.out.println();
+	}
+ 	public static void infiniteRecursion(int num){
+		System.out.println(num);
+		infiniteRecursion(num+1);
+		System.out.println(num);//nothing is printed
+	}
+  
+	public static void printStarsForLoop(int num){
+		for (int i = 1;i<=num ; i++) {
+			System.out.println("*");
+		}
+	}
+  
+  	public static void printStarsRecursion(int num){
+		if (num==0) { // a recursive loop must have a base case
+			return;
+		}
+		else{
+			System.out.println("*");
+			printStarsRecursion(num-1); // recurse 
+		}
+	}
+  
+  	public static void stackUnstack(int num){
+		if (num==0) { // a recursive loop must have a base case
+			return;
+		}
+		else{
+			System.out.println("stack");
+			stackUnstack(num-1);
+			System.out.println("unstack");
+		}
+	}
+  
+  	public static void numberStackUnstackTwoParameters(int num, int val) {
+		if(num==0) {
+			return;
+		}
+		else {
+			System.out.println(val-num+1);
+			numberStackUnstackTwoParameters(num-1, val);
+			System.out.println(val-num+1);
+		}
+	}
+  
+ 	 public static void numberStackUnstackHelperMethod(int num){
+		numberStackUnstackHelperMethodRecursion(num, 1);
+	}
+  
+	public static void numberStackUnstackHelperMethodRecursion(int num, int n){
+		if (n>num){//base case
+			return;
+		}
+		else{
+			System.out.println(n);//stackup
+			numberStackUnstackHelperMethodRecursion(num, n+1);//recurse
+			System.out.println(n);//unstack
+		}
+	}
+}
