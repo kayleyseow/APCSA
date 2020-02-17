@@ -7,17 +7,17 @@ public class RecursionIntro{
 		System.out.print("enter an integer: ");
 		int number = console.nextInt();
 		System.out.println();
-    System.out.println("infinite recursion");
+    		System.out.println("infinite recursion");
 		infiniteRecursion(1);
 		System.out.println();
 		System.out.println("printStarsForLoop");
 		printStarsForLoop(number);
 		System.out.println();
-    System.out.println("printStarsRecursion");
+    		System.out.println("printStarsRecursion");
 		printStarsRecursion(number);
 		System.out.println();
-    System.out.println("StackUnstack");
-		StackUnstack(number);
+    		System.out.println("stackUnstack");
+		stackUnstack(number);
 		System.out.println();
 	}
  	public static void infiniteRecursion(int num){
@@ -30,7 +30,7 @@ public class RecursionIntro{
 			System.out.println("*");
 		}
 	}
-  public static void printStarsRecursion(int num){
+  	public static void printStarsRecursion(int num){
 		if (num==0) { // a recursive loop must have a base case
 			return;
 		}
@@ -39,7 +39,7 @@ public class RecursionIntro{
 			printStarsRecursion(num-1); // recurse 
 		}
 	}
-  public static void stackUnstack(int num){
+  	public static void stackUnstack(int num){
 		if (num==0) { // a recursive loop must have a base case
 			return;
 		}
