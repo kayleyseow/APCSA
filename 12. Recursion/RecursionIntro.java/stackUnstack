@@ -1,0 +1,52 @@
+//stackUnstack prints "stack" when it stacks methods and "unstack" when it unstacks the methods
+//Remember that stack occurs before the recursion and unstack occurs after recursion is finished 
+import java.util.*;
+public class RecursionIntro{
+	public static void main(String[] args) {
+		Scanner console  = new Scanner(System.in);
+		System.out.print("enter an integer: ");
+		int number = console.nextInt();
+		System.out.println();
+    System.out.println("infinite recursion");
+		infiniteRecursion(1);
+		System.out.println();
+		System.out.println("printStarsForLoop");
+		printStarsForLoop(number);
+		System.out.println();
+    System.out.println("printStarsRecursion");
+		printStarsRecursion(number);
+		System.out.println();
+    System.out.println("StackUnstack");
+		StackUnstack(number);
+		System.out.println();
+	}
+ 	public static void infiniteRecursion(int num){
+		System.out.println(num);
+		infiniteRecursion(num+1);
+		System.out.println(num);//nothing is printed
+	}
+	public static void printStarsForLoop(int num){
+		for (int i = 1;i<=num ; i++) {
+			System.out.println("*");
+		}
+	}
+  public static void printStarsRecursion(int num){
+		if (num==0) { // a recursive loop must have a base case
+			return;
+		}
+		else{
+			System.out.println("*");
+			printStarsRecursion(num-1); // recurse 
+		}
+	}
+  public static void stackUnstack(int num){
+		if (num==0) { // a recursive loop must have a base case
+			return;
+		}
+		else{
+			System.out.println("stack");
+			printStarsRecursion(num-1);
+			System.out.println("unstack");
+		}
+	}
+}
