@@ -1,3 +1,8 @@
+/*
+Write a recursive program called WriteBinary that takes an integer as a parameter
+and writes its binary representation to the console. For example, WriteBinary(44)
+should print 101100.  Your program should accommodate a negative integer as input.
+*/
 import java.util.*;
 public class WriteBinary{
 	public static void main(String[] args) {
