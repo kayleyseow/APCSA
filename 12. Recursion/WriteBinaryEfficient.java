@@ -1,3 +1,5 @@
+//efficient code to find binary numbers
+//albert's code
 import java.util.Scanner;
 public class BinaryTest {
 	public static void main(String[] args) {
