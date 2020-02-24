@@ -1,3 +1,14 @@
+/*
+Write a recursive program called BinarySearch which takes in an array of
+distinct integers from the console and returns the index of one of those
+integers (or -1 if the integer cannot be found).
+Hint: Repeatedly subdivide the array into half.
+The input will be structured as follows:
+{number of elements in array} {array, space separated} {number to find}
+Ex: 5 2 4 6 8 10 8
+You can assume that the array is in ascending numeric order.
+Your output should be a single integer, representing an index in the array. Ex: 3
+*/
 import java.util.Scanner;
 public class BinarySearch2{
     public static void main(String[] args) {
