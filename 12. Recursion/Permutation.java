@@ -1,3 +1,17 @@
+/*
+Using recursion, write a program to print out all possible permutations
+of an input string of letters (no duplicate permutations) in sorted alphabetical
+order. For example,
+
+Input string:
+bob
+Output strings:
+bbo
+bob
+obb
+
+Hint: make your life easier by using TreeSet to alphabetize and remove duplicates
+*/
 import java.util.*;
 public class Permutation {
     public static TreeSet<String> results = new TreeSet<String>();
