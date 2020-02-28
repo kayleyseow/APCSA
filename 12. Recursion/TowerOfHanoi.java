@@ -2,6 +2,9 @@
 Write a recursive program to solve the Towers of Hanoi puzzle. The puzzle involves manipulating disks that you can 
 move between three different towers. You are given a certain number of disks (four in this example) stacked on one
 of the three towers. The disks have decreasing diameters, with the smallest disk on the top.
+
+The object of the puzzle is to move all of the disks from one tower to another (say, from A to B). The third tower is 
+provided as a temporary storage space as you move disks around. You are allowed to move only one disk at a time, 
 */
 import java.util.*;
 public class TowerOfHanoiakamoveDisks{
