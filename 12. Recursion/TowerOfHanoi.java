@@ -6,6 +6,11 @@ of the three towers. The disks have decreasing diameters, with the smallest disk
 The object of the puzzle is to move all of the disks from one tower to another (say, from A to B). The third tower is 
 provided as a temporary storage space as you move disks around. You are allowed to move only one disk at a time, 
 and you are not allowed to place a disk on top of a smaller one (i.e., one with a smaller diameter).
+
+Examine the rather simple solutions for one, two, and three disks, and see if you can discern a pattern. Then write a 
+program that will solve the Towers of Hanoi puzzle for any number of disks. (Hint: Moving four disks is a lot like 
+moving three disks, except that one additional disk is on the bottom.)
+Equation for the number of moves for n disk(s) = 2^n-1
 */
 import java.util.*;
 public class TowerOfHanoiakamoveDisks{
