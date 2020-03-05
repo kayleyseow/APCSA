@@ -1,3 +1,20 @@
+/*
+Write a recursive program called waysToClimb that takes a positive integer representing
+a number of stairs and prints (i) each unique way to climb a staircase of that height,
+taking strides of one or two stairs at a time, and (ii) the total number of ways.  Do
+not use any loops.  Output each way to climb on its own line, using a 1 to indicate a
+small stride of 1 stair, and a 2 two indicate a large stride of 2 stairs.
+The order in which you report each way to climb is important. Design your recursive
+method to produce the order shown in the example.
+Example:
+Enter the number of stairs to climb (positive integer): 4
+[1, 1, 1, 1]
+[1, 1, 2]
+[1, 2, 1]
+[2, 1, 1]
+[2, 2]
+Total number of ways = 5
+*/
 import java.util.*;
 public class WaysToClimb{
     public static int counter = 0;
