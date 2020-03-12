@@ -17,7 +17,8 @@ unique bases: [6, 8, 10]
 For a given solution, the list of bases should be in ascending order as in the example.
 For numbers such as 32 and 128, which cannot be represented as a sum of unique squares,
 your method should produce no output.
-*/import java.util.*;
+*/
+import java.util.*;
 public class printSquares{
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
@@ -30,16 +31,13 @@ public class printSquares{
     }
     public static void printsquares(int n, ArrayList<Integer> arraylist, int i) {
         if(n < 0)
-            return;
-            
+            return;      
         if(n == 0) {
             System.out.println ("unique bases: "+arraylist.toString());
             return;
-        }
-        
+        }       
         if(i * i > n)
-            return;
-            
+            return;       
         arraylist.add(i);
         printsquares(n - i * i, arraylist, i + 1);
         arraylist.remove(arraylist.size() - 1);
