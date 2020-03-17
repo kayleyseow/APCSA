@@ -1,3 +1,33 @@
+/*
+Implement selectionSort.
+
+The user will supply 10 space-separated integers from the console.
+HyperGrade examples are formatted using Arrays.toString(), but you
+are free to format "by hand." Print each iteration of each sort as
+in the HyperGrade example shown below. With 10 elements in
+your input array, you should print 10 lines of output, including the
+original array.
+
+Example:
+
+input
+27 301 5 -18 27 75 157 -82 0 10
+
+output:
+selectionSort
+
+[27, 301, 5, -18, 27, 75, 157, -82, 0, 10]
+[-82, 301, 5, -18, 27, 75, 157, 27, 0, 10]
+[-82, -18, 5, 301, 27, 75, 157, 27, 0, 10]
+[-82, -18, 0, 301, 27, 75, 157, 27, 5, 10]
+[-82, -18, 0, 5, 27, 75, 157, 27, 301, 10]
+[-82, -18, 0, 5, 10, 75, 157, 27, 301, 27]
+[-82, -18, 0, 5, 10, 27, 157, 75, 301, 27]
+[-82, -18, 0, 5, 10, 27, 27, 75, 301, 157]
+[-82, -18, 0, 5, 10, 27, 27, 75, 301, 157]
+[-82, -18, 0, 5, 10, 27, 27, 75, 157, 301]
+
+*/
 import java.util.*;
 public class SortSelection{
 	public static void main(String[] args) {
