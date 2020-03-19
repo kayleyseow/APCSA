@@ -1,3 +1,63 @@
+/*Implement four sorts, in this order:
+
+bubbleSort
+selectionSort
+insertionSort 
+mergeSort
+
+The user will supply 10 space-separated integers from the console.
+Print each iteration of each sort as in the example shown below.
+With 10 elements in your input array, you should print 10 lines of
+output, including the original array.
+
+EXCEPTION: for mergeSort, print the original list and final list only.
+
+Example:
+
+input:
+4 5 8 19 38 53 7 23 5 23
+
+output:
+bubbleSort
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 7, 23, 5, 23, 53]
+[4, 5, 8, 19, 7, 23, 5, 23, 38, 53]
+[4, 5, 8, 7, 19, 5, 23, 23, 38, 53]
+[4, 5, 7, 8, 5, 19, 23, 23, 38, 53]
+[4, 5, 7, 5, 8, 19, 23, 23, 38, 53]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+
+selectionSort
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 5, 19, 38, 53, 7, 23, 8, 23]
+[4, 5, 5, 7, 38, 53, 19, 23, 8, 23]
+[4, 5, 5, 7, 8, 53, 19, 23, 38, 23]
+[4, 5, 5, 7, 8, 19, 53, 23, 38, 23]
+[4, 5, 5, 7, 8, 19, 23, 53, 38, 23]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+
+insertionSort
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 7, 8, 19, 38, 53, 23, 5, 23]
+[4, 5, 7, 8, 19, 23, 38, 53, 5, 23]
+[4, 5, 5, 7, 8, 19, 23, 38, 53, 23]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+
+mergeSort
+[4, 5, 8, 19, 38, 53, 7, 23, 5, 23]
+[4, 5, 5, 7, 8, 19, 23, 23, 38, 53]
+*/
 import java.util.*;
 public class SortAll{
 	public static void main(String[] args) {
