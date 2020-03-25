@@ -1,5 +1,6 @@
 /*
 Implement selectionSort.
+
 The user will supply 10 space-separated integers from the console.
 HyperGrade examples are formatted using Arrays.toString(), but you
 are free to format "by hand." Print each iteration of each sort as
