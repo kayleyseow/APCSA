@@ -24,7 +24,7 @@ I think that the time complexity of algorithm 1 is O(n^2) at best, average, and 
 I think that this algorithm is SelectionSort, due to the fact that it is the only algorithm with the graph where all of the lines match and demonstrate the n^2 quality.																
 																															
 Algorithm 2	Average Sort Time for Three Runs (nsec)															
-Input Size	Random		Ascending	Descending	nlnn		n2		n										
+Input Size	Random		Ascending	Descending	nlnn		n^2		n										
 1000	      	1.50E+06	2.10E+03	9.17E+05	6.91E+03	1.00E+06	1.00E+03										
 2000	      	4.98E+06	2.77E+03	4.13E+06	1.52E+04	4.00E+06	2.00E+03										
 3000	      	1.13E+07	4.43E+03	7.66E+06	2.40E+04	9.00E+06	3.00E+03										
@@ -36,7 +36,7 @@ I think that the time complexity of algorithm 2 is O(n^2) at the worst and O(n) 
 I believe that algorithm 2 is BubbleSort due to the fact that not only does it fit with the time complexities of the graph, it also fits with O(n), as shown below. Furthermore, this is not InsertionSort due to the fact that the times on this graph are slower than the ones for algorithm 5. 
 																
 Algorithm 3	Average Sort Time for Three Runs (nsec)															
-Input Size	Random		Ascending	Descending	nlnn		n2											
+Input Size	Random		Ascending	Descending	nlnn		n^2											
 1000		7.85E+04	3.94E+05	7.55E+05	6.91E+03	1.00E+06											
 2000		1.47E+05	1.71E+06	2.79E+06	1.52E+04	4.00E+06											
 3000		2.51E+05	3.57E+06	5.08E+06	2.40E+04	9.00E+06											
@@ -48,7 +48,7 @@ I think that the time complexity of algorithm 3 is O(n^2) at the worst and O(n l
 I think that this algorithm is QuickSort, due to the fact that not only does it fit with the time complexity above, but it also is the quickest sorting algorithm out of all the algorithms, no matter if the trend of the inputs is random, ascending, or descending. 
 																
 Algorithm 4	Average Sort Time for Three Runs (nsec)															
-Input Size	Random		Ascending	Descending	nlnn		n2											
+Input Size	Random		Ascending	Descending	nlnn		n^2											
 1000		7.31E+04	1.52E+04	2.98E+04	6.91E+03	1.00E+06											
 2000		1.38E+05	3.27E+04	5.64E+04	1.52E+04	4.00E+06											
 3000		3.75E+05	3.48E+04	7.08E+04	2.40E+04	9.00E+06											
@@ -60,7 +60,7 @@ I think that the time complexity of algorithm 4 is O(n^2) at the worst and O(n l
 I think that this algorithm is ShellSort, due to the fact that the graph of the algorithm fits with the time complexity of the ShellSort sorting algorithm.
 																
 Algorithm 5	Average Sort Time for Three Runs (nsec)															
-Input Size	Random		Ascending	Descending	nlnn		n2		n										
+Input Size	Random		Ascending	Descending	nlnn		n^2		n										
 1000		2.92E+05	2.87E+03	4.75E+05	6.91E+03	1.00E+06	1.00E+03										
 2000		6.90E+05	4.47E+03	1.46E+06	1.52E+04	4.00E+06	2.00E+03										
 3000		2.13E+06	5.53E+03	3.59E+06	2.40E+04	9.00E+06	3.00E+03										
@@ -72,7 +72,7 @@ I think that the time complexity of algorithm 5 is O(n^2) at the worst and O(n) 
 I believe that algorithm 5 is InsertionSort due to the fact that not only does it fit with the time complexities of the graph, it also fits with O(n), as shown below. Furthermore, this is not BubbleSort due to the fact that the times on this graph are faster than the ones for algorithm 2. 
 																
 Algorithm 6	Average Sort Time for Three Runs (nsec)															
-Input Size	Random		Ascending	Descending	nlnn		n2											
+Input Size	Random		Ascending	Descending	nlnn		n^2											
 4		4.15E+04	2.43E+03	4.90E+03	5.55E+00	1.60E+01											
 5		3.08E+04	2.63E+03	7.78E+04	8.05E+00	2.50E+01											
 10		9.65E+08	3.47E+03	1.09E+09	2.30E+01	1.00E+02											
