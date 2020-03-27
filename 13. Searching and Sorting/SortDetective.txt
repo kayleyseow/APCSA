@@ -1,0 +1,213 @@
+Sort Detective																
+Algorithm 0	Average Sort Time for Three Runs (nsec)															
+Input Size	Random	  Ascending	Descending	nlnn	    n^2											
+1000	      1.20E+05	8.66E+04	8.57E+04	  3.33E+02	1.00E+06											
+2000	      2.59E+05	1.81E+05	1.75E+05	  6.06E+02	4.00E+06											
+3000	      3.99E+05	2.45E+05	2.50E+05	  8.63E+02	9.00E+06											
+4000	      5.43E+05	3.34E+05	3.32E+05	  1.11E+03	1.60E+07											
+6000	      8.54E+05	4.96E+05	5.42E+05	  1.59E+03	3.60E+07											
+10000	      1.44E+06	8.51E+05	8.56E+05	  2.50E+03	1.00E+08											
+15000	      2.24E+06	1.29E+06	1.26E+06	  3.59E+03	2.25E+08											
+I think that the time complexity of algorithm 0 is O(nLogn) at worst, average, and best case. 
+I think that this algorithm is MergeSort, due to the fact that it has all of its time complexities at O(nLogn). This is the only algorithm, and the only graph which displays these qualities. 
+																
+Algorithm 1	Average Sort Time for Three Runs (nsec)															
+Input Size	Random	  Ascending	Descending	nlnn	    n^2											
+1000	      3.23E+05	4.08E+05	4.07E+05	  6.91E+03	1.00E+06											
+2000	      1.74E+06	1.27E+06	2.25E+06	  1.52E+04	4.00E+06											
+3000	      4.51E+06	3.15E+06	4.81E+06	  2.40E+04	9.00E+06											
+4000	      4.95E+06	5.71E+06	7.53E+06	  3.32E+04	1.60E+07											
+6000	      1.04E+07	1.35E+07	1.40E+07	  5.22E+04	3.60E+07											
+10000	      2.59E+07	2.42E+07	2.92E+07  	9.21E+04	1.00E+08											
+15000	      5.70E+07	5.45E+07	8.04E+07	  1.44E+05	2.25E+08											
+I think that the time complexity of algorithm 1 is O(n^2) at best, average, and worst case. 
+I think that this algorithm is SelectionSort, due to the fact that it is the only algorithm with the graph where all of the lines match and demonstrate the n^2 quality.																
+																															
+Algorithm 2	Average Sort Time for Three Runs (nsec)															
+Input Size	Random	Ascending	Descending	nlnn	n2	n										
+1000	      1.50E+06	2.10E+03	9.17E+05	6.91E+03	1.00E+06	1.00E+03										
+2000	      4.98E+06	2.77E+03	4.13E+06	1.52E+04	4.00E+06	2.00E+03										
+3000	      1.13E+07	4.43E+03	7.66E+06	2.40E+04	9.00E+06	3.00E+03										
+4000	      2.02E+07	3.77E+03	1.97E+07	3.32E+04	1.60E+07	4.00E+03										
+6000	      4.03E+07	4.47E+03	3.18E+07	5.22E+04	3.60E+07	6.00E+03										
+10000	      1.23E+08	6.00E+03	7.67E+07	9.21E+04	1.00E+08	1.00E+04										
+15000	      2.95E+08	1.36E+04	1.64E+08	1.44E+05	2.25E+08	1.50E+04										
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+Algorithm 3	Average Sort Time for Three Runs (nsec)															
+Input Size	Random	Ascending	Descending	nlnn	n2											
+1000	7.85E+04	3.94E+05	7.55E+05	6.91E+03	1.00E+06											
+2000	1.47E+05	1.71E+06	2.79E+06	1.52E+04	4.00E+06											
+3000	2.51E+05	3.57E+06	5.08E+06	2.40E+04	9.00E+06											
+4000	3.29E+05	5.83E+06	9.10E+06	3.32E+04	1.60E+07											
+6000	4.74E+05	1.48E+07	2.00E+07	5.22E+04	3.60E+07											
+10000	9.69E+05	3.30E+07	5.07E+07	9.21E+04	1.00E+08											
+15000	1.63E+06	6.84E+07	1.15E+08	1.44E+05	2.25E+08											
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+Algorithm 4	Average Sort Time for Three Runs (nsec)															
+Input Size	Random	Ascending	Descending	nlnn	n2											
+1000	7.31E+04	1.52E+04	2.98E+04	6.91E+03	1.00E+06											
+2000	1.38E+05	3.27E+04	5.64E+04	1.52E+04	4.00E+06											
+3000	3.75E+05	3.48E+04	7.08E+04	2.40E+04	9.00E+06											
+4000	4.03E+05	6.27E+04	8.35E+04	3.32E+04	1.60E+07											
+6000	6.96E+05	1.02E+05	1.22E+05	5.22E+04	3.60E+07											
+10000	1.07E+06	1.39E+05	3.72E+05	9.21E+04	1.00E+08											
+15000	1.52E+06	3.73E+05	3.59E+05	1.44E+05	2.25E+08											
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+Algorithm 5	Average Sort Time for Three Runs (nsec)															
+Input Size	Random	Ascending	Descending	nlnn	n2	n										
+1000	2.92E+05	2.87E+03	4.75E+05	6.91E+03	1.00E+06	1.00E+03										
+2000	6.90E+05	4.47E+03	1.46E+06	1.52E+04	4.00E+06	2.00E+03										
+3000	2.13E+06	5.53E+03	3.59E+06	2.40E+04	9.00E+06	3.00E+03										
+4000	4.08E+06	7.33E+03	6.02E+06	3.32E+04	1.60E+07	4.00E+03										
+6000	8.02E+06	7.90E+03	1.24E+07	5.22E+04	3.60E+07	6.00E+03										
+10000	1.73E+07	3.01E+04	3.60E+07	9.21E+04	1.00E+08	1.00E+04										
+15000	4.04E+07	2.73E+04	7.37E+07	1.44E+05	2.25E+08	1.50E+04										
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+Algorithm 6	Average Sort Time for Three Runs (nsec)															
+Input Size	Random	Ascending	Descending	nlnn	n2											
+4	4.15E+04	2.43E+03	4.90E+03	5.55E+00	1.60E+01											
+5	3.08E+04	2.63E+03	7.78E+04	8.05E+00	2.50E+01											
+10	9.65E+08	3.47E+03	1.09E+09	2.30E+01	1.00E+02											
+1000		1.63E+03		6.91E+03	1.00E+06											
+2000		2.43E+03		1.52E+04	4.00E+06											
+3000		3.19E+03		2.40E+04	9.00E+06											
+4000		4.94E+03		3.32E+04	1.60E+07											
+6000		5.70E+03		5.22E+04	3.60E+07											
+10000		7.60E+03		9.21E+04	1.00E+08											
+15000		1.16E+04		1.44E+05	2.25E+08											
