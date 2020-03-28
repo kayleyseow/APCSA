@@ -1,5 +1,8 @@
 Sort Report
-Sort Descriptions
+
+SORT DESCRIPTIONS
+—————————————————
+
 Bubble Sort
 Description: Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order. Each item “bubbles” up to the location where it is supposed to be in the sorted sequence. Initially, Bubble sort was referred to as “Sorting by exchange” and further, it is referred to as “Exchange Sorting.”
 Big-Oh: Algorithm is slow, with O(n2) as average and worst case.
@@ -68,22 +71,17 @@ Description: Heap sort is a comparison-based sorting technique based on Binary H
 Big-Oh: O(nLogn) in best, average, and worst-case time for this algorithm. 
 Notes:  Heap sort algorithm has limited uses because Quicksort and Mergesort are better in practice. Nevertheless, the Heap data structure itself is enormously used.
 
-Sort Comparison Chart
-Algorithm name	Big-O Best case	Big-O Avg. case	Big-O Worst case	Memory	Stable	Adaptive	Invention	Ref.
-BubbleSort	O(n)	O(n2)	O(n2)	O(1)	Yes	Yes	Iverson, 1962	1,2,3,4
+SORT COMPARITON CHART
+—————————————————————
 
-SelectionSort	O(n2)	O(n2)	O(n2)	O(1)	No	No	N/A	1,2,3,4
-
-InsertionSort	O(n)	O(n2)	O(n2)	O(1)	Yes	Yes	N/A	1,2,3,4
-
-MergeSort	O(nLogn)	O(nLogn)	O(nLogn)	O(n)	Yes	No	John Von Neumann, 1945	1,2,3,4
-
-ShellSort	Depends	Depends	Depends	O(1)	No	Yes	Donald Shell, 1959	1,2,3,4
-
-QuickSort	O(nLogn)	O(nLogn)	O(n2)	O(Logn)	No	Yes	Tony Hoare, 1960	1,2,3,4
-
-HeapSort	O(nLogn)	O(nLogn)	O(nLogn)	O(1)	No	No	J. W. J. Williams, 1964	1,2,3,4
-
+Algorithm name	Big-O (Best)	Big-O (Average)	Big-O (Worst)	Memory	Stable	Adaptive	Invention	
+BubbleSort	O(n)		O(n2)		O(n2)		O(1)	Yes	Yes		Iverson, 1962	
+SelectionSort	O(n2)		O(n2)		O(n2)		O(1)	No	No		N/A	
+InsertionSort	O(n)		O(n2)		O(n2)		O(1)	Yes	Yes		N/A	
+MergeSort	O(nLogn)	O(nLogn)	O(nLogn)	O(n)	Yes	No		John Von Neumann, 1945
+ShellSort	Depends		Depends		Depends		O(1)	No	Yes		Donald Shell, 1959	
+QuickSort	O(nLogn)	O(nLogn)	O(n2)		O(Logn)	No	Yes		Tony Hoare, 1960	
+HeapSort	O(nLogn)	O(nLogn)	O(nLogn)	O(1)	No	No		J. W. J. Williams, 1964	
 
 Algorithm name	Other
 BubbleSort	Usually for mostly sorted arrays, algorithm needs one whole pass without any swap to know it is sorted, good for detecting small errors, compares and exchanges numbers.
@@ -93,4 +91,3 @@ MergeSort	This is an asymptotically optimal compare-based algorithm, and its wor
 ShellSort	This is a simple, but powerful, extension of insertion sort, which gains speed by allowing exchanges of non-adjacent elements and in the worst case, this can be quite effectively used even for moderately large files. 
 QuickSort	This divide and conquer algorithm is, in the average case, the fastest known sorting algorithm for large values of N, is a good general-purpose method in that it can be used in a variety of situations, implements recursion.
 HeapSort	Can be seen as a more sophisticated version of selection sort structuring the unsorted item as a max heap rather than as an unstructured array.
-
