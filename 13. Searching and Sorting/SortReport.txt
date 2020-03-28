@@ -1,0 +1,163 @@
+Sort Report
+Sort Descriptions
+Bubble Sort
+Description: Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order. Each item “bubbles” up to the location where it is supposed to be in the sorted sequence. Initially, Bubble sort was referred to as “Sorting by exchange” and further, it is referred to as “Exchange Sorting.”
+Big-Oh: Algorithm is slow, with O(n2) as average and worst case.
+Notes: Very slow and impractical, used for extremely small arrays due to inefficiency, and usually the first sorting algorithm introduced to beginners due to its simplicity.
+Example: 
+      0	  1	  2	  3	  4	  5	  6	  7     (← numbers to indicate index)
+  0	  22	18	12	50	-4	30	27	1     unsorted array
+  1	  18	12	22	-4	30	27	1	  50
+  2	  12	18	-4	22	27	1	  30	50
+  3	  12	-4	18	22	1	  27	30	50
+  4 	-4	12	18	1	  22	27	30	50
+  5	  -4	12	1	  18	22	27	30	50
+  6	  -4	1	  12	18	22	27	30	50
+  7	  -4	1	  12	18	22	27	30	50
+  8	  -4	1	  12	18	22	27	30	50     sorted array
+ (↑ numbers to indicate the number of steps)
+
+Selection Sort
+Description: It is a natural sorting algorithm in which we find minimum, second minimum, third minimum and so on and arrange them in increasing order. Like bubble sort, irrespective of the input, during ith stage this algorithm incurs (n − i) comparisons. Further, the algorithm does linear search to find ith minimum.
+Big-Oh: Has the same complexity as Bubble Sort, complexity of O(n2).
+Notes: In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
+Example: 
+	0	1	2	3	4	5	6	7
+0	22	18	12	50	-4	30	27	1
+1	-4	18	12	50	22	30	27	1
+2	-4	1	12	18	22	30	27	18
+3	-4	1	12	18	22	30	27	18
+4	-4	1	12	18	22	30	27	50
+5	-4	1	12	18	22	30	27	50
+6	-4	1	12	18	22	30	27	50
+7	-4	1	12	18	22	27	30	50
+8	-4	1	12	18	22	27	30	50
+*Yellow highlight signifies the sorted portion of the array 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Insertion Sort
+Description: Insertion sort follows incremental design wherein we construct a sorted sequence of size two, followed by a sorted sequence of size three, and so on, in this sorting, during ith iteration, the first (i − 1) elements are sorted and ith card is inserted to the correct place by performing linear search on the first (i − 1) elements.
+Big-Oh: Has a complexity of O(n) if the array is fully sorted and the worst case is still O(n2).
+Notes: Insertion sort is used when number of elements is small. It can also be useful when input array is almost sorted, only few elements are misplaced in complete big array, and can use binary search to reduce the number of comparisons in normal insertion sort.
+Example: 
+	0	1	2	3	4	5	6	7
+0	22	18	12	50	-4	30	27	1
+1	18	22	12	50	-4	30	27	1
+2	12	18	22	50	-4	30	27	1
+3	12	18	22	50	-4	30	27	1
+4	-4	12	18	22	50	30	27	1
+5	-4	12	18	22	30	50	27	1
+6	-4	12	18	22	27	30	50	1
+7	-4	1	12	18	22	27	30	50
+*Yellow highlight signifies the sorted portion of the array 
+*Pink highlight signifies the insertion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Merge Sort
+Description: Merge Sort is based on the paradigm divide and conquer which has divide and conquer (combine) phases. As part of divide phase which is a top-down approach, the input array is split into half, recursively, until the array size reduces to one. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
+Big-Oh: Has best, average, and worst case all at O(nLogn). 
+Notes: Merge Sort is useful for sorting linked lists in O(nLogn) time. In the case of linked lists, the case is different mainly due to the difference in memory allocation of arrays and linked lists. Unlike arrays, linked list nodes may not be adjacent in memory. Unlike an array, in the linked list, we can insert items in the middle in O(1) extra space and O(1) time. Therefore, merge operation of merge sort can be implemented without extra space for linked lists.
+Example: 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shell Sort
+Description: Shell Sort is mainly a variation of Insertion Sort. In insertion sort, we move elements only one position ahead. When an element has to be moved far ahead, many movements are involved. The idea of Shell Sort is to allow exchange of far items. In Shell Sort, we make the array h-sorted for a large value of h. We keep reducing the value of h until it becomes 1. An array is said to be h-sorted if all sub lists of every h’th element is sorted.
+Big-Oh: Entirely dependent on the gap used, O(n2), O(n4/3) and O(n3/2).
+Notes: Shell sort allows swapping of indexes that are far apart, where bubble sort only swaps items that are adjacent. Given that on average it does better than O(n^2) (depends of the gap sequence), small code sizes and stack usages it is very popular in embedded applications where memory constraints are a factor. Given a partially sorted list you can in theory sort a lot faster than O(n^2). Also given a large unsorted array the probability that your final sorted position being far from your current position is high. So logically it makes sense to use a larger gap. But the main point of shell sorts is not really its performance, instead it is the simplicity of the algorithm and the low usage of stack memory.
+Example: 
+ Implementation of Shell Sort 
+Quick Sort
+Description: Like Merge Sort, Quick Sort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of Quick Sort that pick pivot in different ways. Quick sort can either always pick the first element as pivot, the last element as pivot, a random element as pivot, or the median as the pivot. After finding the pivot, Quick Sort reorders the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation. Quicksort uses recursion to apply the pivot and partitioning. 
+Big-Oh: O(nLogn) in best and average case, and then O(n2) in worst case.
+Notes: Fastest sorting algorithm, extremely efficient on average and has extremely fast running time, which is O(nLogn). 
+Example:
+ Quick Sort implementation
+Heap Sort
+Description: Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element. The heap can be represented by binary tree or array. With Heap Sort, you first build a max heap from the input data, then stores the largest item at the root of the heap, replace it with the last item of the heap followed by recuing the size of the heap by 1, heap the root of the tree, and then repeat if the size of the heal is greater than 1. 
+Big-Oh: O(nLogn) in best, average, and worst-case time for this algorithm. 
+Notes:  Heap sort algorithm has limited uses because Quicksort and Mergesort are better in practice. Nevertheless, the Heap data structure itself is enormously used.
+Example:
+ 
+Implementation of Heap Sort
+Sort Comparison Chart
+Algorithm name	Big-O Best case	Big-O Avg. case	Big-O Worst case	Memory	Stable	Adaptive	Invention	Ref.
+BubbleSort	O(n)	O(n2)	O(n2)	O(1)	Yes	Yes	Iverson, 1962	1,2,3,4
+
+SelectionSort	O(n2)	O(n2)	O(n2)	O(1)	No	No	N/A	1,2,3,4
+
+InsertionSort	O(n)	O(n2)	O(n2)	O(1)	Yes	Yes	N/A	1,2,3,4
+
+MergeSort	O(nLogn)	O(nLogn)	O(nLogn)	O(n)	Yes	No	John Von Neumann, 1945	1,2,3,4
+
+ShellSort	Depends	Depends	Depends	O(1)	No	Yes	Donald Shell, 1959	1,2,3,4
+
+QuickSort	O(nLogn)	O(nLogn)	O(n2)	O(Logn)	No	Yes	Tony Hoare, 1960	1,2,3,4
+
+HeapSort	O(nLogn)	O(nLogn)	O(nLogn)	O(1)	No	No	J. W. J. Williams, 1964	1,2,3,4
+
+
+Algorithm name	Other
+BubbleSort	Usually for mostly sorted arrays, algorithm needs one whole pass without any swap to know it is sorted, good for detecting small errors, compares and exchanges numbers.
+SelectionSort	Extremely easy to implement, only a good choice for extremely small files, a “brute force” method of sorting; however, when sorting files with large records and small keys, the cost of exchanging records controls the running time.
+InsertionSort	This is another simple sorting algorithm, which is based on the principle used by card players to sort their cards, also important to note that there is no test in the while loop to prevent the index j from running out of bounds.
+MergeSort	This is an asymptotically optimal compare-based algorithm, and its worst-case performance is O(nLogn), which matches the theoretical worst-case lower bound for compare-based algorithms.
+ShellSort	This is a simple, but powerful, extension of insertion sort, which gains speed by allowing exchanges of non-adjacent elements and in the worst case, this can be quite effectively used even for moderately large files. 
+QuickSort	This divide and conquer algorithm is, in the average case, the fastest known sorting algorithm for large values of N, is a good general-purpose method in that it can be used in a variety of situations, implements recursion.
+HeapSort	Can be seen as a more sophisticated version of selection sort structuring the unsorted item as a max heap rather than as an unstructured array.
+
