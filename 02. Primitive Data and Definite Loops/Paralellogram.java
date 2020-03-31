@@ -7,7 +7,6 @@ prints a paralellogram
      *--*--*     */
 public class Paralellogram {
     public static final int SIZE = 8;
-
     public static void main(String[] args) {
         int spaces = SIZE * (SIZE/2 + 1);
         for (int i = 0; i < SIZE; i++) {
