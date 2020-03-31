@@ -1,0 +1,5 @@
+Dai		Alex	438975	48.7	F
+Zhao	Aurick	210498	62.4	D
+ZZhao	Brian	098736	78.2	C
+Kao		Alvin	346282	84.1	B
+Obama	Barack	298575	98.6	A
