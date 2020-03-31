@@ -1,0 +1,6 @@
+Han		Mathew		748935	109	F
+Chen		Andrew		938271	100	D
+Wang		Cody		817263	111	G
+CChen		Thomas		888888	101	E
+Buttigieg	Pete		777777	150	C
+Trump		Donald		999999	35	A
