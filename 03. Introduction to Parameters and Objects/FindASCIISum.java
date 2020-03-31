@@ -1,7 +1,6 @@
 /*
 Write a program that uses a scanner to input an integer N followed
 by N strings, then prints the sum of the characters' ASCII values.
-
 Note: Using nextLine() requires that console inputs be separated by
 returns.
 */
@@ -9,8 +8,8 @@ import java.util.*;
 public class FindASCIISum{
 	public static void main(String[] args) {
      	Scanner console = new Scanner(System.in);
-		int numberOfString = console.nextInt();
-		String userString = console.nextLine();
+	int numberOfString = console.nextInt();
+	String userString = console.nextLine();
         int stringsum = 0;
         for(int i = 0; i < numberOfString; i++){
 			userString = console.nextLine();
