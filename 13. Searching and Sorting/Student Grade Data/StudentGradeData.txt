@@ -1,0 +1,104 @@
+Student Grade Data
+
+The Java class libraries provide sorting methods for arrays and lists.  The Arrays.sort method, for example, can be used to sort an array of Strings into alphabetical order.  The array must be of a type that be compared – that is, a type that stores either primitives or objects that implement the Comparable interface.
+Sometimes, however, you’ll want to sort a collection of objects into an ordering that is different from that of its Comparable implementation, for example reverse alphabetical ordering.  For situations such as these, you can define your own external comparison functions with an object called a comparator.  Table 13.2 in your text summarizes several useful places that comparators appear in the Java class libraries.
+
+In this assignment, use comparators to sort student grade data in ten different ways:
+
+by Last name
+by First name
+by Student ID
+by Percentage
+by Grade
+
+by Last name (reversed)
+by First name (reversed)
+by Student ID (reversed)
+by Percentage (reversed)
+by Grade (reversed)
+
+For example, given this input data:
+
+Dai	Alex	438975	48.7	F
+Zhao	Aurick	210498	62.4	D
+Zhao	Brian	098736	78.2	C
+Kao	Alvin	346282	84.1	B
+Obama	Barak	298575	98.6	A
+
+your program should produce the following output:
+
+Student data, by last name:
+Dai       Alex          438975    48.7     F
+Kao       Alvin         346282    84.1     B
+Obama     Barak         298575    98.6     A
+Zhao      Aurick        210498    62.4     D
+Zhao      Brian         098736    78.2     C
+
+Student data, by first name:
+Dai       Alex          438975    48.7     F
+Kao       Alvin         346282    84.1     B
+Zhao      Aurick        210498    62.4     D
+Obama     Barak         298575    98.6     A
+Zhao      Brian         098736    78.2     C
+
+Student data, by student id:
+Zhao      Brian         098736    78.2     C
+Zhao      Aurick        210498    62.4     D
+Obama     Barak         298575    98.6     A
+Kao       Alvin         346282    84.1     B
+Dai       Alex          438975    48.7     F
+
+Student data, by percentage:
+Dai       Alex          438975    48.7     F
+Zhao      Aurick        210498    62.4     D
+Zhao      Brian         098736    78.2     C
+Kao       Alvin         346282    84.1     B
+Obama     Barak         298575    98.6     A
+
+Student data, by grade:
+Obama     Barak         298575    98.6     A
+Kao       Alvin         346282    84.1     B
+Zhao      Brian         098736    78.2     C
+Zhao      Aurick        210498    62.4     D
+Dai       Alex          438975    48.7     F
+
+Student data, by last name(reversed):
+Zhao      Brian         098736    78.2     C
+Zhao      Aurick        210498    62.4     D
+Obama     Barak         298575    98.6     A
+Kao       Alvin         346282    84.1     B
+Dai       Alex          438975    48.7     F
+
+Student data, by first name(reversed):
+Zhao      Brian         098736    78.2     C
+Obama     Barak         298575    98.6     A
+Zhao      Aurick        210498    62.4     D
+Kao       Alvin         346282    84.1     B
+Dai       Alex          438975    48.7     F
+
+Student data, by student id(reversed):
+Dai       Alex          438975    48.7     F
+Kao       Alvin         346282    84.1     B
+Obama     Barak         298575    98.6     A
+Zhao      Aurick        210498    62.4     D
+Zhao      Brian         098736    78.2     C
+
+Student data, by percentage(reversed):
+Obama     Barak         298575    98.6     A
+Kao       Alvin         346282    84.1     B
+Zhao      Brian         098736    78.2     C
+Zhao      Aurick        210498    62.4     D
+Dai       Alex          438975    48.7     F
+
+Student data, by grade(reversed):
+Dai       Alex          438975    48.7     F
+Zhao      Aurick        210498    62.4     D
+Zhao      Brian         098736    78.2     C
+Kao       Alvin         346282    84.1     B
+Obama     Barak         298575    98.6     A
+ 
+HyperGrade
+Use comparators to sort student grade data in ten different ways:
+by Last name, by First name, by Student ID, by Percentage, by Grade
+by Last name (reversed), by First name (reversed), by Student ID (reversed), by Percentage (reversed), by Grade (reversed).
+See Test Case 1 for formatting of your output.
