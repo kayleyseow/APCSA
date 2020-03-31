@@ -7,5 +7,4 @@ public class PhysicsEquation{
 		double s = s0 + v0 * t + 0.5 * a * t * t;
 		System.out.println(s);
 	}
-	
 }
