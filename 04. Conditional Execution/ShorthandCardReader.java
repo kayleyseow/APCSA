@@ -1,3 +1,4 @@
+//from the java textbook
 import java.util.*;
 public class ShorthandCardReader{
 	public static void main(String[] args) {
