@@ -22,5 +22,3 @@ public class evenSum{
 	    System.out.println("even max = " +evenMax);
 	}	
 }
-
-    
