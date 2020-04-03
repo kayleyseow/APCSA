@@ -1,0 +1,26 @@
+Savitsky-Golay Filter Test
+
+Supplemental information for HyperGrade SavitskyGolayFilterTest.
+
+Start by reading the HyperGrade problem description.
+
+Here is what the HyperGrade test data in analytic form looks like using a graphing utility:
+
+ 
+
+In the left plot, the red curve shows the parabola and the green curve shows the Gaussian (you might have to enlarge – it’s the tiny blip in the green curve along the x-axis at x = 400).
+
+In the right plot, the blue curve shows the sum of the parabola and the Gaussian (again, note the tiny blip at x = 400).  The purple curve is the first derivative of the blue curve.
+
+These plots demonstrate how a derivative can reveal a subtle but significant feature in undifferentiated data, which otherwise might be missed entirely.
+
+Analytic graphing utilities, however, cannot handle real-world digitized data – that is the purpose of your program.  You will start by reproducing the above results using a digitized version of the same idealized test data.
+
+Below is what your Drawing Panel output should look like.  For this idealized data, it is not necessary to smooth the data.   Use filter 8 to take the first derivative.  As explained in HyperGrade, scale the first derivative curve by a factor of 4 to improve visualization.
+
+ 
+
+Submit your code on HyperGrade (there are no cases) and your Drawing Panel plot on Google Classroom.
+
+Once performance is confirmed, we will proceed to analyze some real-world data.
+
