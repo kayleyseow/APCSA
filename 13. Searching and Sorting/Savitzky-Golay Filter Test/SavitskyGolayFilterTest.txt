@@ -23,4 +23,3 @@ Below is what your Drawing Panel output should look like.  For this idealized da
 Submit your code on HyperGrade (there are no cases) and your Drawing Panel plot on Google Classroom.
 
 Once performance is confirmed, we will proceed to analyze some real-world data.
-
