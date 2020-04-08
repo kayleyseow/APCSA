@@ -53,7 +53,7 @@ public class SavitskyGolayFilterTestKeelingCurve{
 	public static void main(String[] args) throws FileNotFoundException{
 		DrawingPanel panel = new DrawingPanel(800, 400);
 		Graphics g = panel.getGraphics();
-    //automatically gets the data from "KeelingDataSavGol.txt"
+    		//automatically gets the data from "KeelingDataSavGol.txt"
 		Scanner console = new Scanner(new File("KeelingDataSavGol.txt"));
 		ArrayList<Double> dalist = new ArrayList<Double>();
 		//MLA header (not really)
@@ -76,7 +76,7 @@ public class SavitskyGolayFilterTestKeelingCurve{
 		}  
 		//prints out the moving average 
 		g.setColor(Color.BLUE);
-    //get the user to input width of this window of time
+    		//get the user to input width of this window of time
 		console= new Scanner(System.in); 
 		System.out.println("Enter an integer for the width of the window (in months):");
 		int window = console.nextInt();
@@ -91,7 +91,7 @@ public class SavitskyGolayFilterTestKeelingCurve{
 			double average = sum/(double)window;
 			davg[i] = average;
 			g.drawOval(i,((400-((int)(average*4)))),1,1);
-      //NOTE: MAKE SURE THAT YOU TYPECAST  A F T E R  MULTIPLYING IT BY 4 (IT CREATES THE SMOOTH LINE)
+     			//NOTE: MAKE SURE THAT YOU TYPECAST  A F T E R  MULTIPLYING IT BY 4 (IT CREATES THE SMOOTH LINE)
 		}
 		System.out.println("select Savitsky-Golay filter: ");
 		System.out.println("smoothing");
@@ -117,14 +117,14 @@ public class SavitskyGolayFilterTestKeelingCurve{
 		System.out.print("Enter an integer 0 - 11 corresponding to desired filter: \n");
 		int filter = console.nextInt();
 		//implementation of the filters
-    //input the coefficients into a 2D array
+    		//input the coefficients into a 2D array
 		int[][] c ={{0, 0, -3, 12, 17, 12, -3, 0, 0},{0, -2, 3, 6, 7, 6, 3, -2, 0},{-21, 14, 39, 54, 59, 54, 39, 14, -21},{ 0,  5,-30, 75,131, 75,-30, 5, 0},{15,-55, 30,135,179,135, 30,-55,15},{ 0, 0, 0,-1,0,1,0,0,0},{ 0, 0,-2,-1,0,1,2,0,0},{ 0,-3,-2,-1,0,1,2,3,0},{-4,-3,-2,-1,0,1,2,3,4},{ 0,0,1,-8,0,8,-1,0,0},{ 0,22, -67, -58,0, 58, 67,-22,  0},{86,-142,-193,-126,0,126,193,142,-86}};
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("TimesRoman", Font.BOLD, 16));
 		g.drawString("Savitzky-Golay Digital Derivative with filter " + filter + ": ", 4, 80);
 		g.setColor(Color.RED);
 		for (int i=4;i<697-16;i++ ){//play around with the values for different filters so there is no out of bounds exception
-      //apply the filter to the moving average 
+      		//apply the filter to the moving average 
 			double smoothing = 4*((c[filter][0]*davg[i-4])+(c[filter][1]*davg[i-3])+(c[filter][2]*davg[i-2])+(c[filter][3]*davg[i-1])+(c[filter][4]*davg[i])+(c[filter][5]*davg[i+1])+(c[filter][6]*davg[i+2])+(c[filter][7]*davg[i+3])+(c[filter][8]*davg[i+4]));
 			g.drawOval(i,400-((int)(4.0*smoothing)),1,1);
 		}
