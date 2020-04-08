@@ -1,0 +1,11 @@
+Savitsky-Golay Filter Keeling
+
+Start by reading the HyperGrade problem description.  You have already done most of the work in your Savitsky-Golay Filter Test program.
+
+The difference here is that you are using real-world data, which tends to be noisier.  In addition, Keeling Curve data shows seasonal variations.  Because of the seasonal variations, you will want to smooth the data in the manner described in HyperGrade.
+
+In this example, the raw Keeling data has been smoothed using a moving average with a window size of 24 months, producing the dark trend line.  The first derivative of this trend line, using filter 8, shows a dominant feature at year 1992, attributed to the Mt. Pinatubo eruption in 1991.
+
+Explore different smoothing windows and make a judgment as to which one best reveals the 1992 feature.
+
+Submit your code on HyperGrade (there are no test cases) and your Drawing Panel plot on Google Classroom.
