@@ -67,7 +67,7 @@ public class BenfordsLaw {
     //method to print out the final things 
     public static void finalresult(int[] number) {
         if (number[0] > 0) { // just in case there r zeroes
-            System.out.println("excluding "+ number[0] +  " zeros");
+            System.out.println("excluding "+ number[0] +  " zeros");//prints 
         }
         int total = sum(number ) - number[0];
         System.out.println("Digit Count Percent"); //format the top line
