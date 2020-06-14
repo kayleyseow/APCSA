@@ -1,4 +1,4 @@
-//from the 2020 exam sample questions, Q1
+//from the 2020 exam sample questions, Q1 (Array/ArrayList)
 public class OnlinePurchaseManager{
 	/** An ArrayList of purchased Gizmo objects, instantiated in the constructor. */
 	private ArrayList<Gizmo> purchases;
