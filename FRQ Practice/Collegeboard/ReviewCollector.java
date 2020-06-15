@@ -1,4 +1,4 @@
-//from an APCS practice test
+//from 2020 APCS practice test
 /*
 A student plans to analyze product reviews found on a Web site by looking for keywords in posted reviews. The ProductReview class, shown below, is used to represent a single review. A product review consists of a product name and a review of that product.
 
