@@ -1,4 +1,4 @@
-//from an APCS practice exam
+//from 2014 APCS practice exam
 /*
 Consider the following partial declaration for a WordScrambler class. The constructor for theWordScrambler class takes an even-length array of String objects and initializes the instance variable scrambledWords.
 a. 
