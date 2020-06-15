@@ -1,4 +1,4 @@
-//from 2007 APCS exam
+//from 2007 APCS exam, Q1
 /*
 A positive integer is called a "self-divisor" if every decimal digit of the number is a divisor of the number, 
 that is, the number is evenly divisible by each and every one of its digits. For example, the number 128 is a 
