@@ -1,3 +1,4 @@
+//from 2020 APCS practice test 
 import java.util.*;
 public class Hailstone{
 	/** Returns the length of a hailstone sequence that starts with n,
