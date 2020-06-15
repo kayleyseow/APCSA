@@ -1,4 +1,4 @@
-//from an APCS practice test
+//from 2014 APCS practice test
 /*
 An array of positive integer values has the mountain property if the elements are ordered such that successive values increase until a maximum value (the peak of the mountain) is reached and then the successive values decrease. The Mountain class declaration shown below contains methods that can be used to determine if an array has the mountain property. You will implement two methods in the Mountain class.
 a. 
