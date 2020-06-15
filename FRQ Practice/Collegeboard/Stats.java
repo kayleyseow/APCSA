@@ -1,4 +1,4 @@
-//from an APCS practice exam
+//from 2014 APCS practice exam
 /*
 A school district would like to get some statistics on its students’ standardized test scores. Scores will be represented as objects of the following ScoreInfo class. Each ScoreInfo object contains a score value and the number of students who earned that score.
 The following Stats class creates and maintains a database of student score information. The scores are stored in sorted order in the database.
