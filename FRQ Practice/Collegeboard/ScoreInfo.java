@@ -1,4 +1,4 @@
-//from an APCS practice test, to be used with Stats.java
+//from 2014 APCS practice test, to be used with Stats.java
 public class ScoreInfo{
 	private int score;
 	private int numStudents;
