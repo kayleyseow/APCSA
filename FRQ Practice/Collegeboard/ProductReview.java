@@ -1,4 +1,4 @@
-//from an APCS practice test, to be used with ReviewCollector.java
+//from 2020 APCS practice test, to be used with ReviewCollector.java
 public class ProductReview{
 	private String name;
 	private String review;
