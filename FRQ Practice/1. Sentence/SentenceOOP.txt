@@ -1,0 +1,17 @@
+/*
+Write a client program SentenceOOPClient.java and class SentenceOOP that
+implements SentenceProblem in an OOP context, as originally intended. Your
+client program should take in a sentence from the user, construct a
+SentenceOOP object, access the methods getBlankPositions(), countWords(),
+and getWords() in your SentenceOOP class, and print out the result.
+
+Your SentenceOOP class should declare a String variable which will hold
+the sentence, provide a constructor for the sentence, and provide the
+three methods getBlankPositions(), countWords(), and getWords().
+
+SentenceOOPClient.java will function exactly like SentenceStatic.java,
+but internally will utilize explicit OOP. Static methods may be more
+efficient at runtime (fewer parameters and no overhead to create and
+destroy objects), whereas OOP groups cohesive methods into into a
+a modular class, attractive from an organizational standpoint. 
+*/
