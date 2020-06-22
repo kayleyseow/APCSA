@@ -1,0 +1,12 @@
+Write a program SentenceStatic which implements your sentence class in a static context,
+i.e. all methods are static.  Make a Scanner object to take in a sentence from the user.
+
+Input/output example:
+
+Enter a sentence: The cat sat on the mat.
+
+[3, 7, 11, 14, 18]
+
+6
+
+{The, cat, sat, on, the, mat.}
