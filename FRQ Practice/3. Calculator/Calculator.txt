@@ -1,0 +1,65 @@
+/*
+You're at one hour before the AP Calculus test, and your calculator has stopped
+working. Luckily, you have a programmable Arduino next to you. All you have time
+for is basic addition, subtraction, multiplication and division. You try quickly
+to write the code, but in your haste spill coffee all over your keyboard. Now,
+the * and / keys are not working. Furthermore, the + and - keys behave like they
+are on caffeine highs and produce ++ and -- only, not + and -.
+
+Implement iterative methods to rescue you from your coffee spill.
+Extra credit oportunity: implement recursive methods.
+
+Take in two positive integers from the user, space separated. While both integers
+will be >= 1, the first is not necessarily larger than the second.
+
+Input/output example:
+
+Enter two integers, space separated: 
+4 5
+9
+-1
+20
+0
+*/
+
+
+public class Calculator
+{
+	/* Input: 2 integers
+	   Output: Sum of those 2 integers*/
+	public int add(int a, int b)
+	{/* Method not implemented */}
+
+	/* Input: 2 integers
+	   Output: Difference of those 2 integers*/
+	public int subtract(int a, int b)
+	{/* Method not implemented */}
+
+	/* Input: 2 integers
+	   Output: Those 2 integers multiplied together*/
+	public int multiply(int a, int b)
+	{/* Method not implemented */}
+
+
+	/* Input: 2 integers
+	   Output: int a / int b
+	   Output is truncated
+	   */
+	public int divide(int a, int b) 
+	{/* Method not implemented */}
+
+	/* Main program. Output should be:
+		9
+		1
+		20
+		1	
+	*/
+	public static void main(String args[]) {
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(5, 4));
+        System.out.println(calc.subtract(5, 4));
+        System.out.println(calc.multiply(5, 4));
+        System.out.println(calc.divide(5, 4));
+    }
+
+}
