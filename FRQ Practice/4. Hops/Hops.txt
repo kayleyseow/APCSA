@@ -1,0 +1,60 @@
+/*
+Write a program to climb a staircase given a list of allowed hop sizes and the height of the staircase.  Report the minimum number of hops required to land on the top step, and the corresponding hop sequence in order of largest hop(s) to smallest.
+
+For example, given allowed hop sizes of 1, 3, and 5 steps and a staircase height of 17 steps, a minimum of 5 hops are required, and the hop sequence is 5, 5, 5, 1, 1.  Always use the largest hop possible as you build up the sequence of hops, i.e. 5, 5, 3, 3, 1 also gets you to the top, but is not considered a valid sequence.
+
+You can assume the staircase height and all hop sizes are positive integers, and that it will always be possible to land on the top step.
+
+The user will provide the number of hop sizes, the corresponding list of allowed hop sizes, and the staircase height, all space separated.  Your program will output the minimum number of hops required on one line and the corresponding sequence of hops on the following line.
+
+Examples of input/output:
+
+(a)
+Enter number of hop sizes, followed by the 
+corresponding list of allowed hop sizes, 
+followed by the staircase height, all space 
+separated: 3 1 3 5 17
+5
+[5, 5, 5, 1, 1]
+
+(b)
+Enter number of hop sizes, followed by the 
+corresponding list of allowed hop sizes, 
+followed by the staircase height, all space 
+separated: 5 1 2 4 6 8 93
+13
+[8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 4, 1]
+*/
+
+You are welcome to use this skeleton code:
+
+class Hops {
+
+    int height;
+    ArrayList<Integer> hopsList = new ArrayList<Integer>();
+
+    /*Set the integer as the height*/
+    public void setHeight(int h)
+    {/* Method not implemented */}
+
+    /*Return height*/
+    public int getHeight()
+    {/* Method not implemented */}
+
+    /*Set the arraylist as hopsList*/
+    public void setHopsList(ArrayList<Integer> jumps)
+    {/* Method not implemented */}
+
+    /*Return hops list*/
+    public ArrayList<Integer> getHopsList()
+    {/* Method not implemented */}
+
+    /*Calculate minimum number of steps touched (number of hops) to the top*/
+    public int numberHopsToTop()
+    {/* Method not implemented */}
+
+    /*Calculate list of steps touched to the top*/
+    public ArrayList<Integer> listHopsToTop()
+    {/* Method not implemented */}
+
+}
