@@ -1,0 +1,85 @@
+/*
+Your stats assignment requires you to talk to people and ask them a list of questions, but you do not feel like doing this. Luckily, you have found a text-to-speech translator, making it possible for you to type your questions beforehand so that everything happens automatically. You do not want it to be too obvious that you are not there in person, so you prepare some starters, acknowledgements, and enders in addition to the questions. Your starters, enders, and acknowledgements are to be randomly choosen.
+*
+* You decide on a conversation format as follows:
+
+* Random starter
+
+* Question 1
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 2
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 3
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 4
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 5
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 6
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 7
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 8
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 9
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Question 10
+* <Get response>
+* Random achnowledgement (repeats allowed)
+
+* Random ender
+*/
+
+/* Use function Random.nextInt(int bound) to get a random number from 0 to bound (exclusive) */
+import java.util.Random;
+
+class ConversationGenerator {
+
+    /*
+    Initialize starters and enders as arrays of 5 strings each.
+    Initialize questions and acknowledgements as arrays of 10 strings each.
+    */
+
+    /* Example of Strings in starters: "Hi", "Hello", "I would like you to answer a few questions" */
+    String[] starters;          // contains all 5 starters
+
+    /* Example of Strings in enders: "Bye", "Thank you for participating in this study" */
+    String[] enders;            // contains all 5 enders
+
+    /* Example of Strings in questions: "What is your name?", "How old are you?" */
+    String[] questions;         // contains all 10 questions
+
+    /* Example of Strings in acknowledgements: "OK, got it!", "Right!", "Are you sure about that?" */
+    String[] acknowledgements;  // contains all 10 acknowldegements
+
+    /*
+    Starters, enders, questions, and acknowledgements are all hard-coded. Only the responses are typed in by the user.
+    */
+
+    /* Constructor to build starters, enders, questions, and acknowledgements */
+    public ConversationGenerator()
+    {/* Method not implemented */}
+
+    /* Method to retrieve responses and return them in an array */
+    public String[] getResponses()
+    {/* Method not implemented */}
+
+}
