@@ -1,3 +1,4 @@
+//Because I thought I screwed up Hops.java 
 import java.util.*;
 public class HopsTest{
     /*Calculate list of steps touched to the top*/
